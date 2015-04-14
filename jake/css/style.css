@@ -457,7 +457,7 @@ About
 
   background-image: url('../img/macbook-air.jpg');
   background-size: cover;
-  box-shadow: 100px 100px 100px rgba(0, 0, 0, .1);
+  /*box-shadow: 100px 100px 100px rgba(0, 0, 0, .1);*/
 
   -webkit-filter: grayscale(50%) hue-rotate(170deg);
   -moz-filter: grayscale(50%) hue-rotate(170deg);
@@ -584,7 +584,7 @@ About
   background-image: url('../img/people_in_mountain.jpeg');
 
   background-size: cover;
-  box-shadow: 100px 100px 100px rgba(0, 0, 0, 1);
+  /*box-shadow: 100px 100px 100px rgba(0, 0, 0, 1);*/
 
   /*-webkit-filter: grayscale(10%) hue-rotate(30deg);*/
   -webkit-filter: grayscale(10%) hue-rotate(270deg);
