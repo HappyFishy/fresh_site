@@ -83,7 +83,7 @@ main {
 .carrot {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   margin-left: -20.5px;
   margin-top: 100px;
@@ -444,6 +444,7 @@ About
   height: 100%;
   background-image: url('../img/macbook-air.jpg');
   background-size: cover;
+  box-shadow: 100px 100px 100px rgba(0, 0, 0, 1);
 }
 
 /*.whoweare {
@@ -456,12 +457,17 @@ About
 }*/
 
 .who {
-  width: 50%;
+  position: relative;
+  left: -50%;
+  padding-left: 50%;
+  width: 100%;
   height: 100%;
   background-color: #fff;
   transform:skewX(-10deg);
     -ms-transform:skewX(-10deg);
     -webkit-transform:skewX(-10deg);
+    box-shadow: -50px 0px 90px -50px rgba(0, 0, 0, 1) inset;
+  /*box-shadow: inset -50px 0 20px -30px rgba(0,0,0,0.2);*/
 }
 
 .who h2,
@@ -474,7 +480,7 @@ About
 }
 
 .who h2 {
- padding-top: 40%;
+ padding-top: 50%;
 }
 
 .who p {
