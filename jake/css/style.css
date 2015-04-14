@@ -27,7 +27,7 @@ body {
 body, html {
   /* prevent horizontal scrolling */
   background-color: #1ab3d1;
-  /*overflow-x: hidden;*/
+  overflow-x: hidden;
   height: 100%;
   width: 100%;
 }
@@ -446,7 +446,7 @@ About
 
 .about {
   color: #000;
-  height: 100%;
+  height: 103%;
   /*background-color: #ade0d1;*/
 
 /*  background: linear-gradient(
@@ -476,7 +476,20 @@ About
 }*/
 
 .who {
-  background-image: url('../img/wavecut_@2x.png');
+  background: linear-gradient(
+      rgba(255, 255, 255, .1), 
+      rgba(255, 255, 255, .1)
+    ), url('../img/11.jpg');
+  background-size: cover;
+
+  /*url('http://images7.alphacoders.com/416/416627.jpg');*/
+  -webkit-filter: grayscale(100%) hue-rotate(100deg);
+  -moz-filter: grayscale(100%) hue-rotate(100deg);
+  -ms-filter: grayscale(100%) hue-rotate(100deg);
+  -0-filter: grayscale(100%) hue-rotate(100deg);
+  filter: grayscale(100%);
+
+  /*background-image: url('../img/wavecut@2x.png');*/
   position: relative;
   left: -50%;
   padding-left: 50%;
@@ -486,8 +499,10 @@ About
   transform:skewX(-10deg);
     -ms-transform:skewX(-10deg);
     -webkit-transform:skewX(-10deg);
-    box-shadow: -50px 0px 90px -50px rgba(0, 0, 0, 1) inset;
+    /*box-shadow: -50px 0px 90px -50px rgba(0, 0, 0, 1) inset;*/
   /*box-shadow: inset -50px 0 20px -30px rgba(0,0,0,0.2);*/
+
+  /*background-attachment: fixed;*/
 }
 
 .who h2,
@@ -511,7 +526,7 @@ About
   line-height: 27px;
   letter-spacing: 1px;
   text-align: left;
-  border-bottom: 4px solid black;
+  /*border-bottom: 4px solid black;*/
   padding-bottom: 3px;
 }
 
@@ -557,7 +572,7 @@ About
 */
 .about1 {
   color: #000;
-  height: 100%;
+  height: 103%;
   /*background-color: #ade0d1;*/
 
 /*  background: linear-gradient(
@@ -589,12 +604,24 @@ About
 }*/
 
 .who1 {
-  z-index: 20;
+  /*z-index: 20;*/
 /*    background: linear-gradient(
       rgba(26, 20, 209, .3), 
       rgba(26, 20, 209, .3)
     ), url('../img/wavecut_@2x.png');*/
-  background-image: url('../img/wavecut_@2x.png');
+  /*background-image: url('../img/wavecut_@2x.png');*/
+
+  background: linear-gradient(
+      rgba(255, 255, 255, .5), 
+      rgba(255, 255, 255, .5)
+    ), url('../img/11.jpg');
+  /*url('http://images7.alphacoders.com/416/416627.jpg');*/
+  -webkit-filter: grayscale(100%) hue-rotate(100deg);
+  -moz-filter: grayscale(100%) hue-rotate(100deg);
+  -ms-filter: grayscale(100%) hue-rotate(100deg);
+  -0-filter: grayscale(100%) hue-rotate(100deg);
+  filter: grayscale(100%);
+
   position: relative;
   right: -50%;
   padding-right: 50%;
@@ -603,8 +630,8 @@ About
   background-color: #fff;
   transform:skewX(-10deg);
     -ms-transform:skewX(-10deg);
-    -webkit-transform:skewX(-10deg);
-    box-shadow: 50px 0px 90px -50px rgba(0, 0, 0, 1) inset;
+    -webkit-transform:skewX(10deg);
+    /*box-shadow: 50px 0px 90px -50px rgba(0, 0, 0, 1) inset;*/
   /*box-shadow: inset -50px 0 20px -30px rgba(0,0,0,0.2);*/
 }
 
@@ -625,15 +652,15 @@ About
   margin: auto;
   transform:skewX(10deg);
     -ms-transform:skewX(10deg);
-    -webkit-transform:skewX(10deg);
+    -webkit-transform:skewX(-10deg);
 }
 
 .who1 h2 {
  padding-top: 50%;
  font-family: Muli;
- padding-right: 10%;
+ padding-left: 10%;
  letter-spacing: 2px;
- font-weight: 700;
+ font-weight: 400;
 }
 
 .who1 p {
@@ -642,7 +669,7 @@ About
   line-height: 27px;
   letter-spacing: 1px;
   text-align: right;
-  border-bottom: 5px solid black;
+  /*border-bottom: 5px solid black;*/
   padding-bottom: 2px;
 }
 
