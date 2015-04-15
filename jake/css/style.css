@@ -290,6 +290,7 @@ main p {
   -moz-transition: visibility 0s 0.7s;
   transition: visibility 0s 0.7s;
 }
+
 .cd-nav .cd-navigation-wrapper {
   /* all navigation content */
   height: 100%;
@@ -351,7 +352,7 @@ main p {
   left: 0;
   bottom: -20px;
   height: 1px;
-  width: 60px;
+  width: 202%;
   background-color: currentColor;
 }
 .cd-nav .cd-primary-nav {
@@ -359,27 +360,33 @@ main p {
 }
 .cd-nav .cd-primary-nav li {
   margin: 1.6em 0;
+  text-decoration: none;
+}
+li:hover {
+  /*text-decoration: none;*/
 }
 .cd-nav .cd-primary-nav a {
-  font-family: "Merriweather", serif;
+  font-family: Muli, serif;
   font-size: 2.4rem;
   color: rgba(255, 255, 255, 0.3);
   display: inline-block;
 }
 .cd-nav .cd-primary-nav a.selected {
-  color: #ffffff;
+  color: #fff;
 }
 .no-touch .cd-nav .cd-primary-nav a:hover {
-  color: #ffffff;
+  color: #fff;
+  text-decoration: none;
 }
 .cd-nav .cd-contact-info {
   margin-top: 80px;
 }
 .cd-nav .cd-contact-info li {
-  font-family: "Merriweather", serif;
+  font-family: Muli, serif;
+  /*font-family: Ovo, serif;*/
   margin-bottom: 1.5em;
   line-height: 1.2;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.5);
 }
 .cd-nav .cd-contact-info a {
   color: #ffffff;
@@ -407,7 +414,7 @@ main p {
     margin-top: 0;
   }
   .cd-nav h2 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin-bottom: 5.6em;
   }
   .cd-nav .cd-primary-nav li {
@@ -423,8 +430,12 @@ main p {
   .cd-nav .cd-contact-info li {
     margin-bottom: 2.4em;
   }
+
+  .cd-nav .cd-contact-info li:nth-child(2) {
+    font-size: 1.8em;
+  }
   .cd-nav .cd-contact-info li, .cd-nav .cd-contact-info a, .cd-nav .cd-contact-info span {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
   .cd-contact-info {
     padding-top: 70%;
@@ -742,6 +753,10 @@ main p {
 html. body {
   background-color: #1ab3d1;
   overflow-y: visible;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 
