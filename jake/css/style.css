@@ -93,6 +93,16 @@ main {
   margin-top: 100px;
 }
 
+.circle {
+  position: fixed;
+  left: 48.2%;
+  top: 93.5%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(255,255,255,1);
+  border-radius: 50%;
+}
+
 main h1, main p {
   text-align: center;
 }
@@ -414,7 +424,10 @@ main p {
     margin-bottom: 2.4em;
   }
   .cd-nav .cd-contact-info li, .cd-nav .cd-contact-info a, .cd-nav .cd-contact-info span {
-    font-size: 2rem;
+    font-size: 1.5em;
+  }
+  .cd-contact-info {
+    padding-top: 70%;
   }
 }
 
@@ -579,8 +592,8 @@ About
   /*background-color: #ade0d1;*/
 
 /*  background: linear-gradient(
-      rgba(26, 215, 148, .4), 
-      rgba(26, 215, 148, .4)
+      rgba(26, 179, 209, .1), 
+      rgba(26, 179, 209, .1)
     ),
   url('../img/people_in_mountain.jpeg');*/
 
@@ -692,13 +705,13 @@ $duration: 8s;*/
 
 @-webkit-keyframes color {
   0% {
-    background-color: #1ad794; 
+    background-color: #1ac794; 
   }
   50% {
     background-color: #1ab3d1;
   }
   100% {
-    background-color: #1ad794;
+    background-color: #1ac794;
   }
 }
 
