@@ -33,6 +33,7 @@ h2 {
     font-size: 50px;
     font-family: "Merriweather", serif;
 }
+
 /* -------------------------------- 
 
 Main Components 
@@ -1304,7 +1305,7 @@ ICON
     
     position: absolute;
     left: 60%;
-    top: 60%;
+    top: 55%;
     bottom: auto;
     right: auto;
     -webkit-transform: translateX(-50%) translateY(-50%);
@@ -1429,6 +1430,7 @@ About
     height: 100%;
     background-color: #fff;
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .who p,
 .who1 p,
@@ -1488,7 +1490,7 @@ About
 }
 .about1 {
     /*background-image: url('http://pixabay.com/static/uploads/photo/2014/09/23/21/21/iphone-6-458150_640.jpg');*/
-    background-image: url('../img/iphone2.jpg');
+    background-image: url('../img/mobile_phone.jpg');
     /*background-image: url('../img/iphone.jpeg');*/
     /*background-image: url('../img/iphone3.jpg');*/
     -moz-filter: grayscale(10%) hue-rotate(270deg);
@@ -1590,7 +1592,7 @@ Portals
     /*width: 200%;*/
     height: 200px;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 70px;
     /*background-color: #1ac794;*/
     padding-right: 50px;
 
