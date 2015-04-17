@@ -1593,7 +1593,7 @@ Portals
     background-color: #1ab3d1;
     padding-right: 50px;
 
-    -webkit-animation: color 20000s ease-in-out infinite;
+    -webkit-animation: color 8s ease-in-out infinite;
 
 /*  background: -webkit-linear-gradient(left, #1ab3d1 40%, #1ac794, #1ab3d1);
     -webkit-animation: sweep 15s linear infinite;*/
