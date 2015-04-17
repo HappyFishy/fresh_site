@@ -21,7 +21,7 @@ body,
 html {
     /* prevent horizontal scrolling */
     background-color: #1ab3d1;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
     height: 103%;
     /*width: 100%;*/
 }
@@ -66,7 +66,7 @@ main {
     z-index: 2;
     /* fix bug on iOS */
     
-    height: 97%;
+    height: 100%;
     /*overflow-y: auto;*/
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
@@ -1459,6 +1459,7 @@ About
     filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.6063000000000001 0.3576 0.0361 0 0 0.1063 0.8575999999999999 0.0361 0 0 0.1063 0.3576 0.5361 0 0 0 0 0 1 0" /><feColorMatrix type="hueRotate" color-interpolation-filters="sRGB" values="170" /></filter></svg>#filter');
     -webkit-filter: grayscale(50%) hue-rotate(170deg);
             filter: grayscale(50%) hue-rotate(170deg);
+            background-size: cover;
 }
 .who,
 .who2,
@@ -1590,12 +1591,18 @@ Portals
     height: 200px;
     text-align: center;
     padding-top: 80px;
-    background-color: #1ab3d1;
+    /*background-color: #1ac794;*/
     padding-right: 50px;
 
-    -webkit-animation: color 8s ease-in-out infinite;
+    -webkit-animation: color 8s linear infinite;
 
-/*  background: -webkit-linear-gradient(left, #1ab3d1 40%, #1ac794, #1ab3d1);
+  /*background: -webkit-linear-gradient(left, #1ab3d1 50%, #1ac794, #1ab3d1);*/
+    /*-webkit-animation: sweep 15s linear infinite;*/
+}
+
+.portgate1 {
+    /*background-color: #1ab3d1;*/
+/*      background: -webkit-linear-gradient(left, #1ac794 50%, #1ab3d1, #1ac794);
     -webkit-animation: sweep 15s linear infinite;*/
 }
 
@@ -1611,7 +1618,7 @@ Portals
 
 .bgclip {
    color: rgba(255,255,255,1);  /* Fallback: asume this color ON TOP of image */
-   background: 
+/*   background: 
    -webkit-linear-gradient(left, rgba(255,255,255,.2) 40%, rgba(255,255,255,.9), rgba(255,255,255,.2));
    -moz-linear-gradient(left, rgba(255,255,255,.2) 40%, rgba(255,255,255,.9), rgba(255,255,255,.2));
    -o-linear-gradient(left, rgba(255,255,255,.2) 40%, rgba(255,255,255,.9), rgba(255,255,255,.2));
@@ -1634,6 +1641,7 @@ Portals
    
    background-clip: text;
    text-fill-color: transparent;*/
+   color: white;
 }
 
 html.android {
@@ -1641,7 +1649,7 @@ html.android {
 }
 
 .portgate h2 {
-   color: rgba(255,255,255,1); 
+   color: white; 
    -webkit-transition-duration: 0.5s;
            transition-duration: 0.5s;
 }
@@ -1667,6 +1675,10 @@ a:hover .portgate:hover {
     text-decoration: none;
 }
 
+
+.cd-wo-trigger, .cd-wor-trigger {
+    color:white;
+}
 
 
 /*.caret {
