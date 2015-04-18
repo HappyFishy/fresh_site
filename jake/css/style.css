@@ -1502,12 +1502,12 @@ About
             filter: grayscale(10%) hue-rotate(270deg);
     background-position: -300px;
 }
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+/*@media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .about1 {
     background-image: url('../img/iphone2.jpg');
     background-size: cover;
   }
-}
+}*/
 .who1,
 .who3 {
     right: -50%;
