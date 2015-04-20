@@ -1491,7 +1491,7 @@ About
 }
 .about1 {
     /*background-image: url('http://pixabay.com/static/uploads/photo/2014/09/23/21/21/iphone-6-458150_640.jpg');*/
-    background-image: url('../img/mobile-phone.jpg');
+    background-image: url('../img/mobile_phone.jpg');
     /*background-image: url('../img/iphone.jpeg');*/
     /*background-image: url('../img/iphone3.jpg');*/
     -moz-filter: grayscale(10%) hue-rotate(270deg);
@@ -1502,12 +1502,12 @@ About
             filter: grayscale(10%) hue-rotate(270deg);
     background-position: -300px;
 }
-@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+/*@media all and (-webkit-min-device-pixel-ratio: 1.5) {
   .about1 {
     background-image: url('../img/iphone2.jpg');
     background-size: cover;
   }
-}
+}*/
 .who1,
 .who3 {
     right: -50%;
@@ -1671,6 +1671,7 @@ html.android {
 }
 
 .portgate span {
+    margin-left: 20px;
     padding-left: 40px;
     -webkit-transition-duration: .5s;
             transition-duration: .5s;
