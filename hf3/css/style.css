@@ -728,10 +728,9 @@ h1 {
 }
 
 .main img {
-  position: absolute;
-  top: 30%;
-  left: 70%;
   max-width: 150px;
+  margin-left: 700px;
+  margin-top: 100px;
 }
 
 
