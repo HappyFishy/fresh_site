@@ -663,15 +663,13 @@ hover?
 }
 
 .fixed h1 {
-<<<<<<< HEAD
 
-=======
   font-size: 50px;
   color: #FCFCFC;
   margin-top: 32%;
   margin-left: 15px;
   color: #FCFCFC;
->>>>>>> b529a01edd1f5428908744654d1440db2cefc868
+
 }
 
 .fixed p {
@@ -734,5 +732,78 @@ h1 {
   max-width: 150px;
 }
 
+.content, .content2 {
+
+  position: absolute;
+  z-index: 60;
+  font-size: 30pt;
+  width: 500px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  line-height: 50px;
+
+}
+
+@-webkit-keyframes lines {
+  0%{
+    /*line-height: 50px;*/
+  }
+  50% {
+    line-height: 100px;
+  }
+  100% {
+    /*line-height: 50px;*/
+  }
+}
+
+@-webkit-keyframes upcontent {
+  0% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*line-height: 4px;*/
+  }
+
+  30% {
+
+  }
+  50% {
+      -webkit-transform: translateY(-1000%);
+      -moz-transform: translateY(-1000%);
+      -ms-transform: translateY(-1000%);
+      -o-transform: translateY(-1000%);
+      transform: translateY(-1000%);
+      /*line-height: 20px;*/
+  }
+  100% {
+      -webkit-transform: translateY(-1000%);
+      -moz-transform: translateY(-1000%);
+      -ms-transform: translateY(-1000%);
+      -o-transform: translateY(-1000%);
+      transform: translateY(-1000%);
+      z-index: -1;
+  }
+}
+
+@-webkit-keyframes downcontent {
+  0% {
+      -webkit-transform: translateY(-1000%);
+      -moz-transform: translateY(-1000%);
+      -ms-transform: translateY(-1000%);
+      -o-transform: translateY(-1000%);
+      transform: translateY(-1000%);
+  }
+
+  100% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+  }
+}
 
 
