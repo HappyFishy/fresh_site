@@ -7,6 +7,12 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Quicksand|Merriweather:400,700,300' rel='stylesheet' type='text/css'>
 
+	<!--START PARA -->
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<!--END PARA -->
+
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css"> 
 	<script src="js/modernizr.js"></script>
@@ -17,7 +23,18 @@
 	<div class="container">
 
 		<div class="main">
-			<img src="img/happy_fish_logo_white.png" alt="Happy Fish Logo">
+			<!-- START PARA -->
+			<div id="container" class="container">
+				<ul id="scene" class="scene">
+					<li class="layer" data-depth="0.60"><img src="img/happy_fish_logo_white.png"></li>
+					<!-- <li class="layer" data-depth="0.80"><img src="img/layer2.png"></li>
+					<li class="layer" data-depth="0.60"><img src="img/layer3.png"></li>
+					<li class="layer" data-depth="0.40"><img src="img/layer4.png"></li>
+					<li class="layer" data-depth="0.20"><img src="img/layer5.png"></li>
+					<li class="layer" data-depth="0.00"><img src="img/layer6.png"></li> -->
+				</ul>
+			</div>
+			<!-- END PARA -->
 		</div>
 		<div class="content">
 			<h2>who we are</h2>
@@ -70,6 +87,17 @@
 			</a>
 		</div>
 	</div>
+<!-- START PARA -->
+	<!-- Scripts -->
+	<script src="scripts/jquery.js"></script>
+	<script src="deploy/jquery.parallax.js"></script>
+	<script>
+
+	// Yep, that's it!
+	$('#scene').parallax();
+
+	</script>
+<!-- END PARA -->
 
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> 
