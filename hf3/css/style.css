@@ -28,7 +28,7 @@ h1 {
   padding-bottom: 20px;
 }
 
-.main, .main2, .main3 {
+.main, .main2, .main3, .main4, .main5 {
   padding-top: 200px;
   text-align: center;
   background-color: #1ab3d1;
@@ -50,7 +50,7 @@ h1 {
 
 }
 
-.main2, .main3 {
+.main2, .main3, .main4, .main5 {
   z-index: 1;
 }
 
@@ -60,6 +60,13 @@ h1 {
 
 .main3 {
   background-color: #ffb3b1;
+}
+
+.main4 {
+  background-color: #f1d2b2;
+}
+.main5 {
+  background-color: #cccc11;
 }
 
 @-webkit-keyframes open {
@@ -657,6 +664,7 @@ h1 {
 
 .fixed h1 {
   font-size: 40pt;
+  color: #1ab3d1;
 }
 
 .fixed p {
