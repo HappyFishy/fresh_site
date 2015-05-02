@@ -76,6 +76,8 @@ jQuery(document).ready(function($){
 
 			} else if (downCheck == true) {
 
+				///////////////////////////////////////////
+
 				$('.content2').css({
 					"-webkit-animation" : "upcontent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 					"-moz-animation" : "upcontent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
@@ -84,7 +86,7 @@ jQuery(document).ready(function($){
 					"-webkit-animation-fill-mode" : "forwards"
 					});
 
-
+				
 
 				$('.container').addClass('2').removeClass('1').removeClass('3').removeClass('4'); 
 				console.log('2');
@@ -113,7 +115,7 @@ jQuery(document).ready(function($){
 
 
 
-
+				/////////////////////////////////
 
 
 				$('.content').css({
@@ -189,12 +191,14 @@ jQuery(document).ready(function($){
 
 
 
+				////////////////////////////////
 
+				
 				$('.content').css({
-					"-webkit-animation" : "downcontent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-					"-moz-animation" : "downcontent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-					"-o-animation" : "downcontent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-					"animation" : "downcontent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)"
+					"-webkit-animation" : "backdown 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
+					"-moz-animation" : "backdown 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
+					"-o-animation" : "backdown 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
+					"animation" : "backdown 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)"
 				});
 			
 

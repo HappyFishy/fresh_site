@@ -672,7 +672,7 @@ hover?
 
 }
 
-.fixed p {
+.fixed p, .content p {
   font-size: 25px;
   font-family: 'Merriweather', serif;
 }
@@ -696,7 +696,7 @@ hover?
   margin-top: 10px;
 }
 
-.fixed h2 {
+.fixed h2, .content h2 {
   margin-left: 15px;
   margin-top: 60px;
   font-size: 20px;
@@ -704,7 +704,7 @@ hover?
   font-family: 'Quicksand', sans-serif;
 }
 
-.fixed .fixed-content>p {
+.fixed .fixed-content>p, .content p {
   margin-left: 15px;
   margin-top: 5px;
   max-width: 600px;
@@ -735,13 +735,21 @@ h1 {
 .content, .content2 {
 
   position: absolute;
+
   z-index: 60;
-  font-size: 30pt;
+  color: #fafafa;
+  /*margin: 30px 0 30px 30px;*/
+  bottom: 335px;
+  left: 30px;
+/*  font-size: 30pt;
   width: 500px;
   height: 200px;
   top: 50%;
   left: 50%;
   line-height: 50px;
+  margin-left: 15px;
+  margin-top: 5px;
+  max-width: 600px;*/
 
 }
 
@@ -767,9 +775,6 @@ h1 {
       /*line-height: 4px;*/
   }
 
-  30% {
-
-  }
   50% {
       -webkit-transform: translateY(-1000%);
       -moz-transform: translateY(-1000%);
@@ -788,13 +793,55 @@ h1 {
   }
 }
 
-@-webkit-keyframes downcontent {
+@-webkit-keyframes backdown {
   0% {
       -webkit-transform: translateY(-1000%);
       -moz-transform: translateY(-1000%);
       -ms-transform: translateY(-1000%);
       -o-transform: translateY(-1000%);
       transform: translateY(-1000%);
+  }
+
+  100% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes downcontent {
+  0% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+  }
+  50% {
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -o-transform: translateY(100%);
+      transform: translateY(100%);
+  }
+  100% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes backup {
+  0% {
+      -webkit-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -o-transform: translateY(100%);
+      transform: translateY(100%);
   }
 
   100% {
