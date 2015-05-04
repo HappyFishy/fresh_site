@@ -274,8 +274,9 @@ jQuery(document).ready(function($){
 			// 	"-webkit-animation-fill-mode" : "forwards"
 			// });
 
-			
-			$('.fixed, .button-contact, .button-portfolio, .up-arrow').addClass('color-change');
+			$('.button-contact, .button-portfolio').addClass('color-change-buttons');
+			$('.fixed, .up-arrow').addClass('color-change');
+		
 
 			 if ($('.container').hasClass('clicked-down2') == false) {
 
