@@ -857,8 +857,7 @@ h1 {
   background-color: #AF4335;
 }
 
-.logo,
-.phone {
+.logo {
   max-width: 150px;
   margin-left: 700px;
   margin-top: 300px;
@@ -892,11 +891,167 @@ h1 {
   opacity: 0.1;
 }
 
-.phone4 {
-  margin-top: -190px;
-  margin-left: -200px;
+.phone {
+  max-width: 150px;
+  margin-left: 690px;
+  margin-top: 290px;
+}
+
+.phone1 {
+  max-width: 70px;
+  margin-top: 60px;
+  margin-left: 760px;
   opacity: 0.1;
 }
+
+.phone2 {
+  margin-top: 150px;
+  margin-left: 190px;
+  opacity: 0.1;
+  max-width: 150px;
+}
+
+.phone3 {
+  margin-top: 480px;
+  margin-left: 1150px;
+  opacity: 0.1;
+  max-width: 30px;
+}
+
+.phone4 {
+  margin-top: 360px;
+  margin-left: 430px;
+  opacity: 0.1;
+}
+
+.wrench {
+  max-width: 180px;
+  margin-left: 690px;
+  margin-top: 310px;
+}
+
+.wrench1 {
+  max-width: 70px;
+  margin-top: 60px;
+  margin-left: 760px;
+  opacity: 0.1;
+}
+
+.wrench2 {
+  margin-top: 180px;
+  margin-left: 170px;
+  opacity: 0.1;
+  max-width: 200px;
+}
+
+.wrench3 {
+  margin-top: 440px;
+  margin-left: 1150px;
+  opacity: 0.1;
+  max-width: 50px;
+}
+
+.wrench4 {
+  margin-top: 380px;
+  margin-left: 380px;
+  opacity: 0.1;
+}
+
+.tie {
+  max-width: 80px;
+  margin-left: 680px;
+  margin-top: 290px;
+}
+
+.tie1 {
+  max-width: 30px;
+  margin-top: 60px;
+  margin-left: 770px;
+  opacity: 0.1;
+}
+
+.tie2 {
+  margin-top: 130px;
+  margin-left: 220px;
+  opacity: 0.1;
+  max-width: 90px;
+}
+
+.tie3 {
+  margin-top: 470px;
+  margin-left: 1150px;
+  opacity: 0.1;
+  max-width: 20px;
+}
+
+.tie4 {
+  margin-top: 175px;
+  margin-left: 500px;
+  opacity: 0.1;
+}
+
+/*.bulb {
+  max-width: 155px;
+  margin-left: 690px;
+  margin-top: 270px;
+}
+
+.light {
+  max-width: 350px;
+  margin-left: 810px;
+  margin-top: 180px;
+}*/
+
+.lightbulb {
+  max-width: 275px;
+  margin-left: 690px;
+  margin-top: 250px;
+}
+
+.lightbulb1 {
+  max-width: 100px;
+  margin-top: 40px;
+  margin-left: 740px;
+  opacity: 0.1;
+}
+
+.lightbulb2 {
+  margin-top: 110px;
+  margin-left: 120px;
+  opacity: 0.1;
+  max-width: 285px;
+}
+
+.lightbulb3 {
+  margin-top: 460px;
+  margin-left: 1150px;
+  opacity: 0.1;
+  max-width: 70px;
+}
+
+.lightbulb4 {
+  margin-top: 190px;
+  margin-left: 275px;
+  opacity: 0.1;
+}
+
+/*******************************************************************
+portfolio
+********************************************************************/
+
+.rbdesigns {
+  max-width: 350px;
+  margin-left: 700px;
+  margin-top: 300px;
+}
+
+.rbdesigns_mobile {
+  margin-top: 200px;
+  margin-left: 260px;
+  opacity: 0.3;
+}
+
+
 
 .content, .content2, .content3, .content4, .content5 {
 
