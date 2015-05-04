@@ -196,6 +196,13 @@ jQuery(document).ready(function($){
 
 			 $('.button-contact, .button-portfolio').removeClass('color-change-buttons');
 			$('.fixed, .up-arrow').removeClass('color-change');
+
+			$('.button-contact, .button-portfolio').css({
+			 	'background-color' : '#444554'
+			 });
+			 $('.fixed, .up-arrow').css({
+			 	'background-color' : 'rgba(100,100,100, .7)'
+			 });
 		
 
 			 // if ($('.container').hasClass('clicked-down2') == false) {
@@ -312,6 +319,9 @@ jQuery(document).ready(function($){
 			 } else {
 			 	console.log('SHOSHOHSOHSHOSH');
 			 }
+
+
+
 			// $('.clicked-down2 down-arrow, clicked-up2 .up-arrow').addClass('color-white');
 
 			////////////////////////////////////////

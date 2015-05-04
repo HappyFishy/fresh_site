@@ -571,7 +571,7 @@ hover?
 
 @-webkit-keyframes colorMain {
   100% {
-    background-color: rgba((100,100,100, .7));
+    background-color: rgba(100,100,100, .7);
   }
 }
 
@@ -592,18 +592,12 @@ hover?
 }
 
 @-webkit-keyframes colorMainTwo {
-  0% {
-    background-color: rgba((100,100,100, .7));
-  }
   100% {
     background-color: rgba(10,176,128, 0.7);
   }
 }
 
 @-webkit-keyframes colorButtonsTwo {
-  0% {
-    background-color: #444554;
-  }
   100% {
     background-color: #00a676;
   }
