@@ -72,23 +72,17 @@ h1 {
 @-webkit-keyframes open {
   0% {
       -webkit-transform: translateY(0%);
-      -moz-transform: translateY(0%);
       -ms-transform: translateY(0%);
-      -o-transform: translateY(0%);
       transform: translateY(0%);
   }
   50% {
       -webkit-transform: translateY(-100%);
-      -moz-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
-      -o-transform: translateY(-100%);
       transform: translateY(-100%);
   }
   100% {
       -webkit-transform: translateY(0%);
-      -moz-transform: translateY(0%);
       -ms-transform: translateY(0%);
-      -o-transform: translateY(0%);
       transform: translateY(0%);
   }
 }
@@ -96,23 +90,17 @@ h1 {
 @-webkit-keyframes openUp {
   0% {
       -webkit-transform: translateY(0%);
-      -moz-transform: translateY(0%);
       -ms-transform: translateY(0%);
-      -o-transform: translateY(0%);
       transform: translateY(0%);
   }
   50% {
       -webkit-transform: translateY(100%);
-      -moz-transform: translateY(100%);
       -ms-transform: translateY(100%);
-      -o-transform: translateY(100%);
       transform: translateY(100%);
   }
   100% {
       -webkit-transform: translateY(0%);
-      -moz-transform: translateY(0%);
       -ms-transform: translateY(0%);
-      -o-transform: translateY(0%);
       transform: translateY(0%);
   }
 }
@@ -120,17 +108,13 @@ h1 {
 @-webkit-keyframes close {
   0% {
       -webkit-transform: translateY(-100%);
-      -moz-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
-      -o-transform: translateY(-100%);
       transform: translateY(-100%);
   }
 
   100% {
       -webkit-transform: translateY(0%);
-      -moz-transform: translateY(0%);
       -ms-transform: translateY(0%);
-      -o-transform: translateY(0%);
       transform: translateY(0%);
   }
 }
@@ -138,17 +122,13 @@ h1 {
 @-webkit-keyframes closeUp {
   0% {
       -webkit-transform: translateY(100%);
-      -moz-transform: translateY(100%);
       -ms-transform: translateY(100%);
-      -o-transform: translateY(100%);
       transform: translateY(100%);
   }
 
   100% {
       -webkit-transform: translateY(0%);
-      -moz-transform: translateY(0%);
       -ms-transform: translateY(0%);
-      -o-transform: translateY(0%);
       transform: translateY(0%);
   }
 }
@@ -555,22 +535,38 @@ hover?
   -webkit-animation-fill-mode: forwards;
 }*/
 
-.butt {
+/*.butt {
   background-color: #fff;
-}
+}*/
 
-.down {
+/*.down {
   background-color: rgba(185,77,63,.7);
-}
+}*/
 
 .color-change {
   -webkit-animation: colorMain 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
+  -moz-animation: colorMain 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: colorMain 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -ms-animation-fill-mode: forwards;
+  -o-animation: colorMain 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -o-animation-fill-mode: forwards;
+  animation: colorMain 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  animation-fill-mode: forwards;
 }
 
 .color-change-buttons {
   -webkit-animation: colorButtons 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
+  -moz-animation: colorButtons 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: colorButtons 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -ms-animation-fill-mode: forwards;
+  -o-animation: colorButtons 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -o-animation-fill-mode: forwards;
+  animation: colorButtons 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes colorMain {
@@ -585,14 +581,78 @@ hover?
   }
 }
 
+@-moz-keyframes colorMain {
+  100% {
+    background-color: rgba(78,79,94, .7);
+  }
+}
+
+@-moz-keyframes colorButtons {
+  100% {
+    background-color: #444554;
+  }
+}
+
+@-ms-keyframes colorMain {
+  100% {
+    background-color: rgba(78,79,94, .7);
+  }
+}
+
+@-ms-keyframes colorButtons {
+  100% {
+    background-color: #444554;
+  }
+}
+
+@-o-keyframes colorMain {
+  100% {
+    background-color: rgba(78,79,94, .7);
+  }
+}
+
+@-o-keyframes colorButtons {
+  100% {
+    background-color: #444554;
+  }
+}
+
+@keyframes colorMain {
+  100% {
+    background-color: rgba(78,79,94, .7);
+  }
+}
+
+@keyframes colorButtons {
+  100% {
+    background-color: #444554;
+  }
+}
+
 .color-change2 {
   -webkit-animation: colorMainTwo 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
+  -moz-animation: colorMainTwo 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: colorMainTwo 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -ms-animation-fill-mode: forwards;
+  -o-animation: colorMainTwo 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -o-animation-fill-mode: forwards;
+  animation: colorMainTwo 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  animation-fill-mode: forwards;
 }
 
 .color-change-buttons2 {
   -webkit-animation: colorButtonsTwo 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
+  -moz-animation: colorButtonsTwo 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: colorButtonsTwo 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -ms-animation-fill-mode: forwards;
+  -o-animation: colorButtonsTwo 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -o-animation-fill-mode: forwards;
+  animation: colorButtonsTwo 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes colorMainTwo {
@@ -607,14 +667,82 @@ hover?
   }
 }
 
+
+@-moz-keyframes colorMainTwo {
+  100% {
+    background-color: rgba(10,176,128, 0.7);
+  }
+}
+
+@-moz-keyframes colorButtonsTwo {
+  100% {
+    background-color: #00a676;
+  }
+}
+
+
+@-ms-keyframes colorMainTwo {
+  100% {
+    background-color: rgba(10,176,128, 0.7);
+  }
+}
+
+@-ms-keyframes colorButtonsTwo {
+  100% {
+    background-color: #00a676;
+  }
+}
+
+
+@-o-keyframes colorMainTwo {
+  100% {
+    background-color: rgba(10,176,128, 0.7);
+  }
+}
+
+@-o-keyframes colorButtonsTwo {
+  100% {
+    background-color: #00a676;
+  }
+}
+
+
+@keyframes colorMainTwo {
+  100% {
+    background-color: rgba(10,176,128, 0.7);
+  }
+}
+
+@keyframes colorButtonsTwo {
+  100% {
+    background-color: #00a676;
+  }
+}
+
 .color-change3 {
   -webkit-animation: colorMainThree 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
+  -moz-animation: colorMainThree 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: colorMainThree 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -ms-animation-fill-mode: forwards;
+  -o-animation: colorMainThree 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -o-animation-fill-mode: forwards;
+  animation: colorMainThree 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  animation-fill-mode: forwards;
 }
 
 .color-change-buttons3 {
   -webkit-animation: colorButtonsThree 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
+  -moz-animation: colorButtonsThree 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: colorButtonsThree 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -ms-animation-fill-mode: forwards;
+  -o-animation: colorButtonsThree 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -o-animation-fill-mode: forwards;
+  animation: colorButtonsThree 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes colorMainThree {
@@ -629,14 +757,78 @@ hover?
   }
 }
 
+@-moz-keyframes colorMainThree {
+  100% {
+    background-color: rgba(170,154,111, .7);
+  }
+}
+
+@-moz-keyframes colorButtonsThree {
+  100% {
+    background-color: #a09065;
+  }
+}
+
+@-ms-keyframes colorMainThree {
+  100% {
+    background-color: rgba(170,154,111, .7);
+  }
+}
+
+@-ms-keyframes colorButtonsThree {
+  100% {
+    background-color: #a09065;
+  }
+}
+
+@-o-keyframes colorMainThree {
+  100% {
+    background-color: rgba(170,154,111, .7);
+  }
+}
+
+@-o-keyframes colorButtonsThree {
+  100% {
+    background-color: #a09065;
+  }
+}
+
+@keyframes colorMainThree {
+  100% {
+    background-color: rgba(170,154,111, .7);
+  }
+}
+
+@keyframes colorButtonsThree {
+  100% {
+    background-color: #a09065;
+  }
+}
+
 .color-change4 {
   -webkit-animation: colorMainFour 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
+  -moz-animation: colorMainFour 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: colorMainFour 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -ms-animation-fill-mode: forwards;
+  -o-animation: colorMainFour 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -o-animation-fill-mode: forwards;
+  animation: colorMainFour 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  animation-fill-mode: forwards;
 }
 
 .color-change-buttons4 {
   -webkit-animation: colorButtonsFour 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
+  -moz-animation: colorButtonsFour 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: colorButtonsFour 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -ms-animation-fill-mode: forwards;
+  -o-animation: colorButtonsFour 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -o-animation-fill-mode: forwards;
+  animation: colorButtonsFour 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes colorMainFour {
@@ -651,14 +843,78 @@ hover?
   }
 }
 
+@-moz-keyframes colorMainFour {
+  100% {
+    background-color: rgba(98,62,90, .7);
+  }
+}
+
+@-moz-keyframes colorButtonsFour {
+  100% {
+    background-color: #583450;
+  }
+}
+
+@-ms-keyframes colorMainFour {
+  100% {
+    background-color: rgba(98,62,90, .7);
+  }
+}
+
+@-ms-keyframes colorButtonsFour {
+  100% {
+    background-color: #583450;
+  }
+}
+
+@-o-keyframes colorMainFour {
+  100% {
+    background-color: rgba(98,62,90, .7);
+  }
+}
+
+@-o-keyframes colorButtonsFour {
+  100% {
+    background-color: #583450;
+  }
+}
+
+@keyframes colorMainFour {
+  100% {
+    background-color: rgba(98,62,90, .7);
+  }
+}
+
+@keyframes colorButtonsFour {
+  100% {
+    background-color: #583450;
+  }
+}
+
 .color-change5 {
   -webkit-animation: colorMainBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
+  -moz-animation: colorMainBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: colorMainBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -ms-animation-fill-mode: forwards;
+  -o-animation: colorMainBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -o-animation-fill-mode: forwards;
+  animation: colorMainBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  animation-fill-mode: forwards;
 }
 
 .color-change-buttons5 {
   -webkit-animation: colorButtonsBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
+  -moz-animation: colorButtonsBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -moz-animation-fill-mode: forwards;
+  -ms-animation: colorButtonsBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -ms-animation-fill-mode: forwards;
+  -o-animation: colorButtonsBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  -o-animation-fill-mode: forwards;
+  animation: colorButtonsBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+  animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes colorMainBack {
@@ -668,6 +924,54 @@ hover?
 }
 
 @-webkit-keyframes colorButtonsBack {
+  100% {
+    background-color: #AF4335;
+  }
+}
+
+@-moz-keyframes colorMainBack {
+  100% {
+    background-color: rgba(185,77,63,.7);
+  }
+}
+
+@-moz-keyframes colorButtonsBack {
+  100% {
+    background-color: #AF4335;
+  }
+}
+
+@-ms-keyframes colorMainBack {
+  100% {
+    background-color: rgba(185,77,63,.7);
+  }
+}
+
+@-ms-keyframes colorButtonsBack {
+  100% {
+    background-color: #AF4335;
+  }
+}
+
+@-o-keyframes colorMainBack {
+  100% {
+    background-color: rgba(185,77,63,.7);
+  }
+}
+
+@-o-keyframes colorButtonsBack {
+  100% {
+    background-color: #AF4335;
+  }
+}
+
+@keyframes colorMainBack {
+  100% {
+    background-color: rgba(185,77,63,.7);
+  }
+}
+
+@keyframes colorButtonsBack {
   100% {
     background-color: #AF4335;
   }
@@ -683,6 +987,9 @@ hover?
 .clicked-up2 .up-arrow {
   background-color: #FCFCFC;
   -webkit-transition-duration: .25s;
+  -moz-transition-duration: .25s;
+  -ms-transition-duration: .25s;
+  -o-transition-duration: .25s;
   transition-duration: .25s;
 }
 
@@ -1084,35 +1391,45 @@ a:hover {
 @-webkit-keyframes openContent {
   0% {
       -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
       -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
       transform: translateY(0%);
       /*line-height: 4px;*/
   }
 
   50% {
       -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
       -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
       transform: translateY(-2500%);
       /*line-height: 20px;*/
   }
   100% {
       -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
       -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
       transform: translateY(-2500%);
-      /*z-index: -1;*/
+      /*z-index: -100;*/
   }
 }
 
 @-webkit-keyframes closeContent {
   0% {
       -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
       -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
       transform: translateY(-2500%);
   }
 
   100% {
       -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
       -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
       transform: translateY(0%);
       /*z-index: 60;*/
   }
@@ -1121,32 +1438,406 @@ a:hover {
 @-webkit-keyframes openUpContent {
   0% {
       -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
       -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
       transform: translateY(0%);
   }
   50% {
       -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
       -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
       transform: translateY(2500%);
   }
   100% {
       -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
       -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
       transform: translateY(2500%);
-      /*z-index: -1;*/
+      /*z-index: -100;*/
   }
 }
 
 @-webkit-keyframes closeUpContent {
   0% {
       -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
       -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
       transform: translateY(2500%);
   }
 
   100% {
       -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
       -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*z-index: 60;*/
+  }
+}
+
+@-moz-keyframes openContent {
+  0% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*line-height: 4px;*/
+  }
+
+  50% {
+      -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
+      -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
+      transform: translateY(-2500%);
+      /*line-height: 20px;*/
+  }
+  100% {
+      -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
+      -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
+      transform: translateY(-2500%);
+      /*z-index: -100;*/
+  }
+}
+
+@-moz-keyframes closeContent {
+  0% {
+      -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
+      -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
+      transform: translateY(-2500%);
+  }
+
+  100% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*z-index: 60;*/
+  }
+}
+
+@-moz-keyframes openUpContent {
+  0% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+  }
+  50% {
+      -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
+      -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
+      transform: translateY(2500%);
+  }
+  100% {
+      -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
+      -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
+      transform: translateY(2500%);
+      /*z-index: -100;*/
+  }
+}
+
+@-moz-keyframes closeUpContent {
+  0% {
+      -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
+      -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
+      transform: translateY(2500%);
+  }
+
+  100% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*z-index: 60;*/
+  }
+}
+
+@-ms-keyframes openContent {
+  0% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*line-height: 4px;*/
+  }
+
+  50% {
+      -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
+      -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
+      transform: translateY(-2500%);
+      /*line-height: 20px;*/
+  }
+  100% {
+      -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
+      -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
+      transform: translateY(-2500%);
+      /*z-index: -100;*/
+  }
+}
+
+@-ms-keyframes closeContent {
+  0% {
+      -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
+      -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
+      transform: translateY(-2500%);
+  }
+
+  100% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*z-index: 60;*/
+  }
+}
+
+@-ms-keyframes openUpContent {
+  0% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+  }
+  50% {
+      -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
+      -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
+      transform: translateY(2500%);
+  }
+  100% {
+      -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
+      -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
+      transform: translateY(2500%);
+      /*z-index: -100;*/
+  }
+}
+
+@-ms-keyframes closeUpContent {
+  0% {
+      -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
+      -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
+      transform: translateY(2500%);
+  }
+
+  100% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*z-index: 60;*/
+  }
+}
+
+@-o-keyframes openContent {
+  0% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*line-height: 4px;*/
+  }
+
+  50% {
+      -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
+      -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
+      transform: translateY(-2500%);
+      /*line-height: 20px;*/
+  }
+  100% {
+      -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
+      -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
+      transform: translateY(-2500%);
+      /*z-index: -100;*/
+  }
+}
+
+@-o-keyframes closeContent {
+  0% {
+      -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
+      -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
+      transform: translateY(-2500%);
+  }
+
+  100% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*z-index: 60;*/
+  }
+}
+
+@-o-keyframes openUpContent {
+  0% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+  }
+  50% {
+      -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
+      -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
+      transform: translateY(2500%);
+  }
+  100% {
+      -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
+      -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
+      transform: translateY(2500%);
+      /*z-index: -100;*/
+  }
+}
+
+@-o-keyframes closeUpContent {
+  0% {
+      -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
+      -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
+      transform: translateY(2500%);
+  }
+
+  100% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*z-index: 60;*/
+  }
+}
+
+@keyframes openContent {
+  0% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*line-height: 4px;*/
+  }
+
+  50% {
+      -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
+      -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
+      transform: translateY(-2500%);
+      /*line-height: 20px;*/
+  }
+  100% {
+      -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
+      -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
+      transform: translateY(-2500%);
+      /*z-index: -100;*/
+  }
+}
+
+@keyframes closeContent {
+  0% {
+      -webkit-transform: translateY(-2500%);
+      -moz-transform: translateY(-2500%);
+      -ms-transform: translateY(-2500%);
+      -o-transform: translateY(-2500%);
+      transform: translateY(-2500%);
+  }
+
+  100% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      /*z-index: 60;*/
+  }
+}
+
+@keyframes openUpContent {
+  0% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+  }
+  50% {
+      -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
+      -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
+      transform: translateY(2500%);
+  }
+  100% {
+      -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
+      -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
+      transform: translateY(2500%);
+      /*z-index: -100;*/
+  }
+}
+
+@keyframes closeUpContent {
+  0% {
+      -webkit-transform: translateY(2500%);
+      -webmozansform: translateY(2500%);
+      -ms-transform: translateY(2500%);
+      -o-transform: translateY(2500%);
+      transform: translateY(2500%);
+  }
+
+  100% {
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
       transform: translateY(0%);
       /*z-index: 60;*/
   }

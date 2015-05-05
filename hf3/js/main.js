@@ -1,20 +1,6 @@
 jQuery(document).ready(function($){
 
-	// var delta = deltaY;
-	// delta = 0;
-
 	function goDown() {
-
-		 // $('.down-arrow').css({
-			// 'background-color' : '#FCFCFC',
-			// '-webkit-transition-duration' : '.25s',
-			// 'transition-duration' : '.25s'
-			// });
-			//  $('.down-arrow .down-icon::before, .down-arrow .down-icon:after').css({
-			// 'background-color' : '#FCFCFC',
-			// '-webkit-transition-duration' : '.25s',
-			// 'transition-duration' : '.25s'
-			// });
 
 /////////////////////////////////////////////////////////////////
 ///////////// FIXES ARROW COLOR WHEN ACTIVE /////////////
@@ -27,10 +13,12 @@ jQuery(document).ready(function($){
 		$('.down-arrow').css({
 			'background-color' : '#FCFCFC',
 			'-webkit-transition-duration' : '.25s',
+			'-moz-transition-duration' : '.25s',
+			'-ms-transition-duration' : '.25s',
+			'-o-transition-duration' : '.25s',
 			'transition-duration' : '.25s'
 		});
 
-		// if('.down-arrow').hasClass()
 
 		$('.container').toggleClass('clicked-down').addClass('clicked-down2').removeClass('clicked-up2');
 
@@ -52,8 +40,6 @@ jQuery(document).ready(function($){
 			 });
 
 			
-
-
 
 			$('.container').removeClass('1').removeClass('2').removeClass('3').removeClass('4'); 
 			console.log('5');
@@ -77,34 +63,9 @@ jQuery(document).ready(function($){
 				"animation" : "closeUp 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)"
 				});
 
-			///////////////////content moves down on down click
-			// $('.content').css("z-index", "60");
-			// // $('.main5').css("z-index", "2");
-			// $('.content2, .content3, .content4').css("z-index", "-1");
-
-			// $('.content').css({
-			// 	"-webkit-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-moz-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-o-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)"
-			// 	});
-
-			// $('.content5').css({
-			// 	"-webkit-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-moz-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-o-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-webkit-animation-fill-mode" : "forwards"
-			// 	});
-
-
-
 
 			$('.main').css("z-index", "20");
 			console.log('down5');
-
-
-
 
 			////////////////////////////////////////////////////////////  
 
@@ -117,7 +78,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 			$('.content').css({
@@ -125,7 +91,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 		} else if (downCheckThree == true) {
@@ -174,7 +145,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 			$('.content5').css({
@@ -182,7 +158,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 		} else if (downCheckTwo == true) {
@@ -232,7 +213,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 			$('.content4').css({
@@ -240,25 +226,19 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 
 		} else if (downCheck == true) {
 
-			// $('.button-contact, .button-portfolio').addClass('color-change-buttons2');
-			// $('.fixed, .up-arrow').addClass('color-change2');
-
 			$('.button-contact, .button-portfolio').addClass('color-change-buttons2').removeClass('color-change-buttons1').removeClass('color-change-buttons3').removeClass('color-change-buttons4').removeClass('color-change-buttons5');
 			$('.fixed, .up-arrow').addClass('color-change2').removeClass('color-change').removeClass('color-change3').removeClass('color-change4').removeClass('color-change5');
-		
-
-			 // if ($('.container').hasClass('clicked-down2') == false) {
-
-			 // 	$('.down-arrow').addClass('color-change2');
-			 // } else {
-			 // 	console.log('kokokokok');
-			 // }
 
 			$('.button-contact, .button-portfolio').css({
 			 	'background-color' : '#444554'
@@ -267,38 +247,7 @@ jQuery(document).ready(function($){
 			 	'background-color' : 'rgba(78,79,94, .7)'
 			 });
 
-
-
-			//  $('.down-arrow').css({
-			// 'background-color' : '#FCFCFC',
-			// '-webkit-transition-duration' : '.25s',
-			// 'transition-duration' : '.25s'
-			// });
-
-
-
-
-
-		
-
-			 // if ($('.container').hasClass('clicked-down2') == false) {
-
-			 // 	$('.down-arrow').addClass('color-change');
-			 // } else {
-			 // 	console.log('SHOSHOHSOHSHOSH');
-			 // }
-
-			///////////////////////////////////////////
-
-			// $('.content2').css({
-			// 	"-webkit-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-moz-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-o-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-webkit-animation-fill-mode" : "forwards"
-			// 	});
-
-			
+			///////////////////////////////////////////		
 
 			$('.container').addClass('2').removeClass('1').removeClass('3').removeClass('4'); 
 			console.log('2');
@@ -332,7 +281,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 			$('.content3').css({
@@ -340,7 +294,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 
@@ -349,22 +308,6 @@ jQuery(document).ready(function($){
 
 			$('.container').addClass('1').removeClass('2').removeClass('3').removeClass('4');
 			console.log('1');
-
-
-
-			///////////////////////////////// content moves up on down click
-
-
-			// $('.content').css({
-			// 	"-webkit-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-moz-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-o-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-webkit-animation-fill-mode" : "forwards"
-			// 	});
-
-
-
 
 
 			// $('.liner').css({
@@ -378,16 +321,6 @@ jQuery(document).ready(function($){
 			////////////////////////////////////////
 			//color change
 			////////////////////////////////////////
-
-
-			// $('.fixed, .button-contact, .button-portfolio, .up-arrow, .down-arrow').css({
-			// 	"-webkit-animation" : "colorMain2 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-webkit-animation-fill-mode" : "forwards"
-			// });
-
-
-
-
 
 
 			$('.button-contact, .button-portfolio').addClass('color-change-buttons').removeClass('color-change-buttons2').removeClass('color-change-buttons3').removeClass('color-change-buttons4').removeClass('color-change-buttons5');
@@ -407,10 +340,6 @@ jQuery(document).ready(function($){
 			 // } else {
 			 // 	console.log('SHOSHOHSOHSHOSH');
 			 // }
-
-
-
-			// $('.clicked-down2 down-arrow, clicked-up2 .up-arrow').addClass('color-white');
 
 			////////////////////////////////////////
 			//content line height change
@@ -441,7 +370,6 @@ jQuery(document).ready(function($){
 
 			console.log('down');
 
-
 			////////////////////////////////////////////////////////////  
 
 			$('.content3, .content4, .content5').css("z-index", "-1");
@@ -453,7 +381,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "openContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 			$('.content2').css({
@@ -461,7 +394,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "closeUpContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 		}
@@ -469,19 +407,7 @@ jQuery(document).ready(function($){
 	};
 
 
-		function goUp(){
-
-		// $('.up-arrow').css({
-		// 	'background-color' : '#FCFCFC',
-		// 	'-webkit-transition-duration' : '.25s',
-		// 	'transition-duration' : '.25s'
-		// });
-
-		////////////////////
-		/////////////////// add in turn arrow background white
-		////////////////////
-		////////////////////
-		////////////////////
+		function goUp() {
 
 		downCheck = $('.container').hasClass('1');
 		downCheckTwo = $('.container').hasClass('2');
@@ -495,6 +421,9 @@ jQuery(document).ready(function($){
 		$('.up-arrow').css({
 			'background-color' : '#FCFCFC',
 			'-webkit-transition-duration' : '.25s',
+			'-moz-transition-duration' : '.25s',
+			'-ms-transition-duration' : '.25s',
+			'-o-transition-duration' : '.25s',
 			'transition-duration' : '.25s'
 		});
 
@@ -512,12 +441,10 @@ jQuery(document).ready(function($){
 			 });
 
 
-
-			$('.content p').css({
-				"-webkit-animation" : "spaceLinesBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "initial"
-			});
-
+			// $('.content p').css({
+			// 	"-webkit-animation" : "spaceLinesBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
+			// 	"-webkit-animation-fill-mode" : "initial"
+			// });
 
 
 			console.log('4');
@@ -541,21 +468,7 @@ jQuery(document).ready(function($){
 			});
 
 
-
 			////////////////////////////////
-
-
-			// $('.content').css({
-			// 	"-webkit-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-moz-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"-o-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-			// 	"animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)"
-			// });
-		
-
-
-
-
 
 
 			$('.main').css("z-index", "20");
@@ -567,6 +480,7 @@ jQuery(document).ready(function($){
 
 			////////////////////////////// content moves on up arrow
 
+
 			$('.content3, .content4, .content5').css("z-index", "-1");
 			// $('.content5').css("z-index", "2");
 			$('.content').css("z-index", "60");
@@ -576,7 +490,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 			$('.content').css({
@@ -584,7 +503,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 		} else if (downCheckTwo == true) {
@@ -599,8 +523,6 @@ jQuery(document).ready(function($){
 			 $('.fixed, .down-arrow').css({
 			 	'background-color' : 'rgba(10,176,128, 0.7)'
 			 });
-
-
 
 
 
@@ -642,7 +564,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 			$('.content2').css({
@@ -650,7 +577,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 		} else if (downCheckThree == true) {
@@ -691,8 +623,6 @@ jQuery(document).ready(function($){
 			
 			console.log('up3');
 
-
-
 			////////////////////////////// content moves on up arrow
 
 			$('.content, .content2, .content5').css("z-index", "-1");
@@ -704,7 +634,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 			$('.content3').css({
@@ -712,7 +647,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 		} else if (downCheckFour == true) {
@@ -727,7 +667,6 @@ jQuery(document).ready(function($){
 			 $('.fixed, .down-arrow').css({
 			 	'background-color' : 'rgba(98,62,90, .7)'
 			 });
-
 
 
 
@@ -757,7 +696,6 @@ jQuery(document).ready(function($){
 			console.log('up2');
 
 
-
 			////////////////////////////// content moves on up arrow
 
 			$('.content, .content2, .content3').css("z-index", "-1");
@@ -769,7 +707,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 			$('.content4').css({
@@ -777,7 +720,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 	
 	
@@ -792,8 +740,6 @@ jQuery(document).ready(function($){
 			 $('.fixed, .down-arrow').css({
 			 	'background-color' : 'rgba(185,77,63,.7)'
 			 });
-
-				// $('.down-arrow').addClass('color-change4');
 		
 
 
@@ -824,7 +770,6 @@ jQuery(document).ready(function($){
 			console.log('up');
 
 
-
 			////////////////////////////// content moves on up arrow
 
 			$('.content2, .content3, .content4').css("z-index", "-1");
@@ -836,7 +781,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "openUpContent 1.4s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 
 			$('.content5').css({
@@ -844,7 +794,12 @@ jQuery(document).ready(function($){
 				"-moz-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"-o-animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
 				"animation" : "closeContent 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99)",
-				"-webkit-animation-fill-mode" : "forwards"
+				"-webkit-animation-fill-mode" : "forwards",
+				"-moz-animation-fill-mode" : "forwards",
+				"-ms-animation-fill-mode" : "forwards",
+				"-o-animation-fill-mode" : "forwards",
+				"animation-fill-mode" : "forwards"
+
 			});
 	
 		} 
@@ -1028,10 +983,6 @@ $('html').bind('mousewheel wheel DOMMouseScroll MozMousePixelScroll', function (
 
 
 
-
-
-
-	
 
 
 });
