@@ -559,6 +559,10 @@ hover?
   background-color: #fff;
 }
 
+.down {
+  background-color: rgba(185,77,63,.7);
+}
+
 .color-change {
   -webkit-animation: colorMain 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
@@ -571,7 +575,7 @@ hover?
 
 @-webkit-keyframes colorMain {
   100% {
-    background-color: rgba(100,100,100, .7);
+    background-color: rgba(78,79,94, .7);
   }
 }
 
@@ -603,71 +607,72 @@ hover?
   }
 }
 
-.color-change {
-  -webkit-animation: colorMain 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+.color-change3 {
+  -webkit-animation: colorMainThree 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
 }
 
-.color-change-buttons {
-  -webkit-animation: colorButtons 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+.color-change-buttons3 {
+  -webkit-animation: colorButtonsThree 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes colorMain {
+@-webkit-keyframes colorMainThree {
   100% {
-    background-color: rgba(100,100,100, .7);
+    background-color: rgba(170,154,111, .7);
   }
 }
 
-@-webkit-keyframes colorButtons {
+@-webkit-keyframes colorButtonsThree {
   100% {
-    background-color: #444554;
+    background-color: #a09065;
   }
 }
 
-.color-change {
-  -webkit-animation: colorMain 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+.color-change4 {
+  -webkit-animation: colorMainFour 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
 }
 
-.color-change-buttons {
-  -webkit-animation: colorButtons 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+.color-change-buttons4 {
+  -webkit-animation: colorButtonsFour 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes colorMain {
+@-webkit-keyframes colorMainFour {
   100% {
-    background-color: rgba(100,100,100, .7);
+    background-color: rgba(98,62,90, .7);
   }
 }
 
-@-webkit-keyframes colorButtons {
+@-webkit-keyframes colorButtonsFour {
   100% {
-    background-color: #444554;
+    background-color: #583450;
   }
 }
 
-.color-change {
-  -webkit-animation: colorMain 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+.color-change5 {
+  -webkit-animation: colorMainBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
 }
 
-.color-change-buttons {
-  -webkit-animation: colorButtons 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
+.color-change-buttons5 {
+  -webkit-animation: colorButtonsBack 0.6s cubic-bezier(0.91, 0.01, 0.6, 0.99);
   -webkit-animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes colorMain {
+@-webkit-keyframes colorMainBack {
   100% {
-    background-color: rgba(100,100,100, .7);
+    background-color: rgba(185,77,63,.7);
   }
 }
 
-@-webkit-keyframes colorButtons {
+@-webkit-keyframes colorButtonsBack {
   100% {
-    background-color: #444554;
+    background-color: #AF4335;
   }
 }
+
 
 .clicked-down2 .down-arrow .color-change,
 .clicked-up2 .up-arrow .color-change {

@@ -5,6 +5,33 @@ jQuery(document).ready(function($){
 
 	function goDown() {
 
+		 // $('.down-arrow').css({
+			// 'background-color' : '#FCFCFC',
+			// '-webkit-transition-duration' : '.25s',
+			// 'transition-duration' : '.25s'
+			// });
+			//  $('.down-arrow .down-icon::before, .down-arrow .down-icon:after').css({
+			// 'background-color' : '#FCFCFC',
+			// '-webkit-transition-duration' : '.25s',
+			// 'transition-duration' : '.25s'
+			// });
+
+/////////////////////////////////////////////////////////////////
+///////////// FIXES ARROW COLOR WHEN ACTIVE /////////////
+/////////////////////////////////////////////////////////////////
+
+
+		$('.down-arrow').removeClass('color-change5').removeClass('color-change').removeClass('color-change2').removeClass('color-change3').removeClass('color-change4');
+		
+
+		$('.down-arrow').css({
+			'background-color' : '#FCFCFC',
+			'-webkit-transition-duration' : '.25s',
+			'transition-duration' : '.25s'
+		});
+
+		// if('.down-arrow').hasClass()
+
 		$('.container').toggleClass('clicked-down').addClass('clicked-down2').removeClass('clicked-up2');
 
 		downCheck = $('.container').hasClass('1');
@@ -13,6 +40,20 @@ jQuery(document).ready(function($){
 		downCheckFour = $('.container').hasClass('4');
 
 		if (downCheckFour == true) {
+
+			$('.button-contact, .button-portfolio').addClass('color-change-buttons5').removeClass('color-change-buttons').removeClass('color-change-buttons2').removeClass('color-change-buttons3').removeClass('color-change-buttons4');
+			$('.fixed, .up-arrow').addClass('color-change5').removeClass('color-change').removeClass('color-change2').removeClass('color-change3').removeClass('color-change4');
+
+			$('.button-contact, .button-portfolio').css({
+			 	'background-color' : '#583450'
+			 });
+			 $('.fixed, .up-arrow').css({
+			 	'background-color' : 'rgba(98,62,90, .7)'
+			 });
+
+			
+
+
 
 			$('.container').removeClass('1').removeClass('2').removeClass('3').removeClass('4'); 
 			console.log('5');
@@ -89,6 +130,18 @@ jQuery(document).ready(function($){
 
 		} else if (downCheckThree == true) {
 
+			$('.button-contact, .button-portfolio').addClass('color-change-buttons4').removeClass('color-change-buttons').removeClass('color-change-buttons2').removeClass('color-change-buttons3').removeClass('color-change-buttons5');
+			$('.fixed, .up-arrow').addClass('color-change4').removeClass('color-change').removeClass('color-change2').removeClass('color-change3').removeClass('color-change5');
+
+			$('.button-contact, .button-portfolio').css({
+			 	'background-color' : '#a09065'
+			 });
+			 $('.fixed, .up-arrow').css({
+			 	'background-color' : 'rgba(170,154,111, .7)'
+			 });
+
+
+
 			$('.container').addClass('4').removeClass('1').removeClass('2').removeClass('3');   
 			console.log('4');
 			$('.main, .main2, .main3').css("z-index", "1");
@@ -133,6 +186,19 @@ jQuery(document).ready(function($){
 			});
 
 		} else if (downCheckTwo == true) {
+
+			$('.button-contact, .button-portfolio').addClass('color-change-buttons3').removeClass('color-change-buttons').removeClass('color-change-buttons2').removeClass('color-change-buttons4').removeClass('color-change-buttons5');
+			$('.fixed, .up-arrow').addClass('color-change3').removeClass('color-change').removeClass('color-change').removeClass('color-change4').removeClass('color-change5');
+
+
+			$('.button-contact, .button-portfolio').css({
+			 	'background-color' : '#00a676'
+			 });
+			 $('.fixed, .up-arrow').css({
+			 	'background-color' : 'rgba(10,176,128, 0.7)'
+			 });
+
+
 
 			$('.container').addClass('3').removeClass('1').removeClass('2').removeClass('4'); 
 			console.log('3');
@@ -183,26 +249,36 @@ jQuery(document).ready(function($){
 			// $('.button-contact, .button-portfolio').addClass('color-change-buttons2');
 			// $('.fixed, .up-arrow').addClass('color-change2');
 
-			$('.button-contact, .button-portfolio').addClass('color-change-buttons2');
-			$('.fixed, .up-arrow').addClass('color-change2');
+			$('.button-contact, .button-portfolio').addClass('color-change-buttons2').removeClass('color-change-buttons1').removeClass('color-change-buttons3').removeClass('color-change-buttons4').removeClass('color-change-buttons5');
+			$('.fixed, .up-arrow').addClass('color-change2').removeClass('color-change').removeClass('color-change3').removeClass('color-change4').removeClass('color-change5');
 		
 
-			 if ($('.container').hasClass('clicked-down2') == false) {
+			 // if ($('.container').hasClass('clicked-down2') == false) {
 
-			 	$('.down-arrow').addClass('color-change2');
-			 } else {
-			 	console.log('kokokokok');
-			 }
-
-			 $('.button-contact, .button-portfolio').removeClass('color-change-buttons');
-			$('.fixed, .up-arrow').removeClass('color-change');
+			 // 	$('.down-arrow').addClass('color-change2');
+			 // } else {
+			 // 	console.log('kokokokok');
+			 // }
 
 			$('.button-contact, .button-portfolio').css({
 			 	'background-color' : '#444554'
 			 });
 			 $('.fixed, .up-arrow').css({
-			 	'background-color' : 'rgba(100,100,100, .7)'
+			 	'background-color' : 'rgba(78,79,94, .7)'
 			 });
+
+
+
+			//  $('.down-arrow').css({
+			// 'background-color' : '#FCFCFC',
+			// '-webkit-transition-duration' : '.25s',
+			// 'transition-duration' : '.25s'
+			// });
+
+
+
+
+
 		
 
 			 // if ($('.container').hasClass('clicked-down2') == false) {
@@ -309,16 +385,28 @@ jQuery(document).ready(function($){
 			// 	"-webkit-animation-fill-mode" : "forwards"
 			// });
 
-			$('.button-contact, .button-portfolio').addClass('color-change-buttons');
-			$('.fixed, .up-arrow').addClass('color-change');
+
+
+
+
+
+			$('.button-contact, .button-portfolio').addClass('color-change-buttons').removeClass('color-change-buttons2').removeClass('color-change-buttons3').removeClass('color-change-buttons4').removeClass('color-change-buttons5');
+			$('.fixed, .up-arrow').addClass('color-change').removeClass('color-change2').removeClass('color-change3').removeClass('color-change4').removeClass('color-change5');
+
+			$('.button-contact, .button-portfolio').css({
+			 	'background-color' : '#AF4335'
+			 });
+			 $('.fixed, .up-arrow').css({
+			 	'background-color' : 'rgba(185,77,63,.7)'
+			 });
 		
+			 /////////////
+			 // if ($('.container').hasClass('clicked-down2') == false) {
 
-			 if ($('.container').hasClass('clicked-down2') == false) {
-
-			 	$('.down-arrow').addClass('color-change');
-			 } else {
-			 	console.log('SHOSHOHSOHSHOSH');
-			 }
+			 // 	$('.down-arrow').addClass('color-change');
+			 // } else {
+			 // 	console.log('SHOSHOHSOHSHOSH');
+			 // }
 
 
 
@@ -383,6 +471,18 @@ jQuery(document).ready(function($){
 
 		function goUp(){
 
+		// $('.up-arrow').css({
+		// 	'background-color' : '#FCFCFC',
+		// 	'-webkit-transition-duration' : '.25s',
+		// 	'transition-duration' : '.25s'
+		// });
+
+		////////////////////
+		/////////////////// add in turn arrow background white
+		////////////////////
+		////////////////////
+		////////////////////
+
 		downCheck = $('.container').hasClass('1');
 		downCheckTwo = $('.container').hasClass('2');
 		downCheckThree = $('.container').hasClass('3');
@@ -390,8 +490,26 @@ jQuery(document).ready(function($){
 
 		$('.container').toggleClass('clicked-up').addClass('clicked-up2').removeClass('clicked-down2');
 
+		$('.up-arrow').removeClass('color-change5').removeClass('color-change').removeClass('color-change2').removeClass('color-change3').removeClass('color-change4');
+
+		$('.up-arrow').css({
+			'background-color' : '#FCFCFC',
+			'-webkit-transition-duration' : '.25s',
+			'transition-duration' : '.25s'
+		});
 
 		if (downCheck == true) {
+
+
+			$('.button-contact, .button-portfolio').addClass('color-change-buttons5').removeClass('color-change-buttons3').removeClass('color-change-buttons4').removeClass('color-change-buttons2').removeClass('color-change-buttons');
+			$('.fixed, .down-arrow').addClass('color-change5').removeClass('color-change3').removeClass('color-change4').removeClass('color-change2').removeClass('color-change');
+
+			$('.button-contact, .button-portfolio').css({
+			 	'background-color' : '#444554'
+			 });
+			 $('.fixed, .down-arrow').css({
+			 	'background-color' : 'rgba(78,79,94, .7)'
+			 });
 
 
 
@@ -472,6 +590,17 @@ jQuery(document).ready(function($){
 		} else if (downCheckTwo == true) {
 
 
+			$('.button-contact, .button-portfolio').addClass('color-change-buttons').removeClass('color-change-buttons3').removeClass('color-change-buttons4').removeClass('color-change-buttons2').removeClass('color-change-buttons5');
+			$('.fixed, .down-arrow').addClass('color-change').removeClass('color-change3').removeClass('color-change4').removeClass('color-change2').removeClass('color-change5');
+
+			$('.button-contact, .button-portfolio').css({
+			 	'background-color' : '#00a676'
+			 });
+			 $('.fixed, .down-arrow').css({
+			 	'background-color' : 'rgba(10,176,128, 0.7)'
+			 });
+
+
 
 
 
@@ -526,6 +655,17 @@ jQuery(document).ready(function($){
 
 		} else if (downCheckThree == true) {
 
+			$('.button-contact, .button-portfolio').addClass('color-change-buttons2').removeClass('color-change-buttons3').removeClass('color-change-buttons4').removeClass('color-change-buttons').removeClass('color-change-buttons5');
+			$('.fixed, .down-arrow').addClass('color-change2').removeClass('color-change3').removeClass('color-change4').removeClass('color-change').removeClass('color-change5');
+
+			$('.button-contact, .button-portfolio').css({
+			 	'background-color' : '#a09065'
+			 });
+			 $('.fixed, .down-arrow').css({
+			 	'background-color' : 'rgba(170,154,111, .7)'
+			 });
+
+
 			$('.container').addClass('2').removeClass('1').removeClass('3').removeClass('4');
 			console.log('2');
 			
@@ -576,6 +716,20 @@ jQuery(document).ready(function($){
 			});
 
 		} else if (downCheckFour == true) {
+
+
+			$('.button-contact, .button-portfolio').addClass('color-change-buttons3').removeClass('color-change-buttons2').removeClass('color-change-buttons4').removeClass('color-change-buttons').removeClass('color-change-buttons5');
+			$('.fixed, .down-arrow').addClass('color-change3').removeClass('color-change2').removeClass('color-change4').removeClass('color-change').removeClass('color-change5');
+
+			$('.button-contact, .button-portfolio').css({
+			 	'background-color' : '#583450'
+			 });
+			 $('.fixed, .down-arrow').css({
+			 	'background-color' : 'rgba(98,62,90, .7)'
+			 });
+
+
+
 
 			$('.container').addClass('3').removeClass('1').removeClass('2').removeClass('4');
 			console.log('3');
@@ -628,6 +782,20 @@ jQuery(document).ready(function($){
 	
 	
 		} else if (downCheck == false && downCheckTwo == false && downCheckThree == false && downCheckFour == false) {
+
+			$('.button-contact, .button-portfolio').addClass('color-change-buttons4').removeClass('color-change-buttons2').removeClass('color-change-buttons3').removeClass('color-change-buttons').removeClass('color-change-buttons5');
+			$('.fixed, .down-arrow').addClass('color-change4').removeClass('color-change2').removeClass('color-change3').removeClass('color-change').removeClass('color-change5');
+
+			$('.button-contact, .button-portfolio').css({
+			 	'background-color' : '#AF4335'
+			 });
+			 $('.fixed, .down-arrow').css({
+			 	'background-color' : 'rgba(185,77,63,.7)'
+			 });
+
+				// $('.down-arrow').addClass('color-change4');
+		
+
 
 			$('.container').addClass('4').removeClass('1').removeClass('2').removeClass('3');
 			console.log('4');
