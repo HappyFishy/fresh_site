@@ -36,7 +36,7 @@ jQuery(document).ready(function($){
 			 	'background-color' : '#583450'
 			 });
 			 $('.fixed, .up-arrow').css({
-			 	'background-color' : 'rgba(98,62,90, .7)'
+			 	'background-color' : 'rgba(109,67,101, .7)'
 			 });
 
 			
@@ -105,10 +105,10 @@ jQuery(document).ready(function($){
 			$('.fixed, .up-arrow').addClass('color-change4').removeClass('color-change').removeClass('color-change2').removeClass('color-change3').removeClass('color-change5');
 
 			$('.button-contact, .button-portfolio').css({
-			 	'background-color' : '#a09065'
+			 	'background-color' : '#247ba0'
 			 });
 			 $('.fixed, .up-arrow').css({
-			 	'background-color' : 'rgba(170,154,111, .7)'
+			 	'background-color' : 'rgba(46,151,188, .7)'
 			 });
 
 
@@ -176,7 +176,7 @@ jQuery(document).ready(function($){
 			 	'background-color' : '#00a676'
 			 });
 			 $('.fixed, .up-arrow').css({
-			 	'background-color' : 'rgba(10,176,128, 0.7)'
+			 	'background-color' : 'rgba(2,191,133, 0.7)'
 			 });
 
 
@@ -244,7 +244,7 @@ jQuery(document).ready(function($){
 			 	'background-color' : '#444554'
 			 });
 			 $('.fixed, .up-arrow').css({
-			 	'background-color' : 'rgba(78,79,94, .7)'
+			 	'background-color' : 'rgba(89,91,107, .7)'
 			 });
 
 			///////////////////////////////////////////		
@@ -330,7 +330,7 @@ jQuery(document).ready(function($){
 			 	'background-color' : '#AF4335'
 			 });
 			 $('.fixed, .up-arrow').css({
-			 	'background-color' : 'rgba(185,77,63,.7)'
+			 	'background-color' : 'rgba(198,73,64,.7)'
 			 });
 		
 			 /////////////
@@ -437,7 +437,7 @@ jQuery(document).ready(function($){
 			 	'background-color' : '#444554'
 			 });
 			 $('.fixed, .down-arrow').css({
-			 	'background-color' : 'rgba(78,79,94, .7)'
+			 	'background-color' : 'rgba(89,91,107, .7)'
 			 });
 
 
@@ -521,7 +521,7 @@ jQuery(document).ready(function($){
 			 	'background-color' : '#00a676'
 			 });
 			 $('.fixed, .down-arrow').css({
-			 	'background-color' : 'rgba(10,176,128, 0.7)'
+			 	'background-color' : 'rgba(2,191,133, 0.7)'
 			 });
 
 
@@ -591,10 +591,10 @@ jQuery(document).ready(function($){
 			$('.fixed, .down-arrow').addClass('color-change2').removeClass('color-change3').removeClass('color-change4').removeClass('color-change').removeClass('color-change5');
 
 			$('.button-contact, .button-portfolio').css({
-			 	'background-color' : '#a09065'
+			 	'background-color' : '#247ba0'
 			 });
 			 $('.fixed, .down-arrow').css({
-			 	'background-color' : 'rgba(170,154,111, .7)'
+			 	'background-color' : 'rgba(46,151,188, .7)'
 			 });
 
 
@@ -665,7 +665,7 @@ jQuery(document).ready(function($){
 			 	'background-color' : '#583450'
 			 });
 			 $('.fixed, .down-arrow').css({
-			 	'background-color' : 'rgba(98,62,90, .7)'
+			 	'background-color' : 'rgba(109,67,101, .7)'
 			 });
 
 
@@ -738,7 +738,7 @@ jQuery(document).ready(function($){
 			 	'background-color' : '#AF4335'
 			 });
 			 $('.fixed, .down-arrow').css({
-			 	'background-color' : 'rgba(185,77,63,.7)'
+			 	'background-color' : 'rgba(198,73,64,.7)'
 			 });
 		
 
