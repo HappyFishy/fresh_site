@@ -91,7 +91,7 @@ $section = "contact";
   <title>HF3</title>
 </head>
 <body>
-  <!-- <form id="ajax-contact" method="post" action="mailer.php"> -->
+  
   <div class="container">
 
     <form id="ajax-contact" class="form" method="post" action="contact2.php">
