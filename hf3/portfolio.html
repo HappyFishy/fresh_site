@@ -20,6 +20,15 @@
   <title>HF3</title>
 </head>
 <body>
+
+  <script>
+    function sendAJAX () {
+      $('.contacter').load('contact2.php');
+      $('.sent').removeClass('check');
+      $('.form-messages').removeClass('error');
+    }
+  </script>
+
   <div class="container">
 
     <div class="main">
@@ -120,7 +129,9 @@
         <img src="img/happy_fish_logo_white.png" alt="Happy Fish Logo">
         <h1 class="port-heading"><a href="http://www.rebeccablackdesigns.com">rebeccablackdesigns.com</a></h1>
         <div class="button-contact">
-          <a href="#"><p>contact</p></a>
+          <button id="load" onClick="sendAJAX()">
+            <a href="#"><p>contact</p></a>
+          </button>
         </div>
         <div class="button-portfolio">
           <a href="index.html"><p>home</p></a>
@@ -141,6 +152,17 @@
       </a>
     </div>
   </div>
+
+  <div class="contacter">
+
+  </div>
+
+  <div class="sent">
+      <div class="check-icon"></div>
+      <p>SENT</p>
+    </div>
+
+    
 <!-- START PARA -->
   <!-- Scripts -->
   <script src="scripts/jquery.js"></script>
@@ -160,5 +182,6 @@
 
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> 
+<script src="js/contact.js"></script> 
 </body>
 </html>

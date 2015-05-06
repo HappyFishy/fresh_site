@@ -1,0 +1,331 @@
+/*html {
+	background-color: rgba(0,0,0,0);
+}*/
+
+/*html.fade-in {
+	-webkit-animation: fadeIn .25s ease-in;
+	-webkit-animation-fill-mode: forwards;
+}*/
+
+
+.form-messages {
+  z-index: 150;
+  background-color: rgba(0,0,0,0);
+  /*background-color: red;*/
+  position: absolute;
+  width: 520px;
+  height: 50px;
+  top: 170px;
+  left: 450px;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,0,0);
+}
+
+.message {
+  padding: 20px 30px;
+  /*border-radius: 5%;*/
+}
+
+.check .check-icon::before {
+  -webkit-animation: check 0.5s ease-in-out;
+  animation: check 0.5s ease-in-out;
+}
+
+.check .check-icon::after {
+  -webkit-animation: checkLong 0.5s ease-in-out;
+  animation: checkLong 0.5s ease-in-out;
+}
+
+.sent.check {
+  -webkit-animation: fading 1s ease-in-out;
+  animation: fading 1s ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes check {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes checkLong {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 102px;
+  }
+}
+
+@-webkit-keyframes fading {
+  0%{
+    /*opacity: 0%;*/
+    /*visibility: hidden;*/
+  }
+  100%{
+    /*opacity: 100%;*/
+    visibility: visible;
+  }
+}
+
+.sent {
+  z-index: 150;
+  /*background-color: red;*/
+  background-color: rgba(50,50,50,.5);
+  position: absolute;
+  width: 135px;
+  height: 110px;
+  top: 15%;
+  left: 15%;
+  color: black;
+  border-radius: 5%;
+  padding-top: 90px;
+  padding-left: 65px;
+  visibility: hidden;
+}
+
+.sent p {
+  padding-top: 50px;
+  font-size: 20pt;
+  color: white;
+  text-align: left;
+  margin-right: 40px;
+  /*opacity: 0%;*/
+  /*visibility: hidden;*/
+}
+
+.sent .check-icon {
+  /*position: absolute;*/
+  /*left: 40%;*/
+  top: 50px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 52px;
+  height: 2px;
+  color: white;
+  z-index: 150;
+  /*background-color: red;*/
+}
+
+
+.sent .check-icon::before,
+.sent .check-icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FCFCFC;
+
+   -webkit-transition: -webkit-transform 0.5s, width 0.5s, top 0.3s;
+  -moz-transition: -moz-transform 0.5s, width 0.5s, top 0.3s;
+  -o-transition: -moz-transform 0.5s, width 0.5s, top 0.3s;
+  transition: transform 0.5s, width 0.5s, top 0.3s;
+}
+
+.sent:hover .check-icon::before,
+.sent:hover .check-icon::after {
+  /*width: 120%;*/
+  /*height: 120%;*/
+  /*-webkit-transition-duration: 0.25s;*/
+}
+
+.sent .check-icon::before {
+
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -ms-transform-origin: top right;
+  -o-transform-origin: top right;
+  transform-origin: top right;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sent .check-icon::after {
+  -webkit-transform-origin: bottom right;
+  -moz-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  -o-transform-origin: bottom right;
+  transform-origin: bottom right;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  width: 102px;
+}
+
+.success {
+  /*background-color: red;*/
+}
+
+.error {
+  background-color: red;
+}
+
+.close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color: #FCFCFC;
+	font-size: 20pt;
+	z-index: 150;
+	width: 40px;
+	height: 40px;
+}
+
+.close .x-icon {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 22px;
+  height: 2px;
+  color: white;
+  /*background-color: red;*/
+}
+
+
+.close .x-icon::before,
+.close .x-icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FCFCFC;
+
+   -webkit-transition: -webkit-transform 0.5s, width 0.5s, top 0.3s;
+  -moz-transition: -moz-transform 0.5s, width 0.5s, top 0.3s;
+  -o-transition: -moz-transform 0.5s, width 0.5s, top 0.3s;
+  transition: transform 0.5s, width 0.5s, top 0.3s;
+}
+
+.close:hover .x-icon::before,
+.close:hover .x-icon::after {
+  width: 120%;
+  height: 120%;
+  /*-webkit-transition-duration: 0.25s;*/
+}
+
+.close .x-icon::before {
+
+  -webkit-transform-origin: middle middle;
+  -moz-transform-origin: middle middle;
+  -ms-transform-origin: middle middle;
+  -o-transform-origin: middle middle;
+  transform-origin: middle middle;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.close .x-icon::after {
+  -webkit-transform-origin: middle middle;
+  -moz-transform-origin: middle middle;
+  -ms-transform-origin: middle middle;
+  -o-transform-origin: middle middle;
+  transform-origin: middle middle;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.close:hover {
+	cursor: pointer;
+	/*background-color: rgba(160,160,160,1);*/
+	/*-webkit-transition-duration: 0.5s;*/
+}
+
+.container {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,.6);
+	z-index: 100;
+}
+
+.fade-in .form {
+	-webkit-animation: fade .3s linear;
+	-webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.form {
+  border-radius: 5px;
+  height: 300px;
+  width: 500px;
+  position: absolute;
+  top: 250px;
+  left: 450px;
+  z-index: 150;
+  background-color: rgba(190,190,190,1);
+  /*background-color: red;*/
+  border: 10px solid rgba(160,160,160,1);
+  visibility: hidden;
+  /*opacity: 0%;*/
+}
+
+.field {
+	margin-top: 20px;
+}
+
+.field, .field2, .field3, .field4 {
+  font-size: 25px;
+  font-family: 'Merriweather', serif;
+  padding: 20px 50px;
+}
+
+#name, #email, #message {
+	position: absolute;
+	left: 250px;
+	border-radius: 5px;
+	box-shadow: none;
+}
+
+@-webkit-keyframes fadeIn {
+	100%{
+		/*background-color: rgba(0,0,0,.7); */
+	}
+}
+
+@-webkit-keyframes fade {
+	/*0%{*/
+		/*opacity: 0%;*/
+	/*}*/
+  0%{
+    opacity: 0;
+    visibility: visible;
+  }
+	100%{
+    opacity: 1;
+    visibility: visible;
+		/*opacity: 100%;*/
+		/*visibility: visible;*/
+	}
+}

@@ -2458,6 +2458,167 @@ ME-D-UH QUERIES
 
 
 
+button {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  padding: 0px 0px;
+  cursor: pointer;
+}
+
+
+
+/****************************************
+contact sent
+******************************************/
+
+.check .check-icon::before {
+  -webkit-animation: check 0.4s ease-in;
+  animation: check 0.4s ease-in;
+}
+
+.check .check-icon::after {
+  -webkit-animation: checkLong 0.4s ease-in;
+  animation: checkLong 0.4s ease-in;
+}
+
+.sent.check {
+  -webkit-animation: fading 1.5s ease-in;
+  animation: fading 1.5s ease-in;
+}
+
+@-webkit-keyframes check {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes checkLong {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 102px;
+  }
+}
+
+@-webkit-keyframes fading {
+  0%{
+    opacity: 0;
+    /*visibility: hidden;*/
+    visibility: visible;
+  }
+  50%{
+    opacity: 1;
+    /*visibility: visible;*/
+  }
+  100% {
+    opacity: 1;
+    /*visibility: hidden;*/
+  }
+}
+
+.sent {
+  z-index: 150;
+  /*background-color: red;*/
+  background-color: rgba(50,50,50,.5);
+  position: absolute;
+  width: 135px;
+  height: 110px;
+  top: 35%;
+  left: 42%;
+  color: black;
+  border-radius: 5%;
+  padding-top: 90px;
+  padding-left: 65px;
+  visibility: hidden;
+}
+
+.sent p {
+  padding-top: 50px;
+  font-size: 20pt;
+  color: white;
+  text-align: left;
+  margin-right: 40px;
+  /*opacity: 0%;*/
+  /*visibility: hidden;*/
+}
+
+.sent .check-icon {
+  /*position: absolute;*/
+  /*left: 40%;*/
+  top: 50px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 52px;
+  height: 2px;
+  color: white;
+  z-index: 150;
+  /*background-color: red;*/
+}
+
+
+.sent .check-icon::before,
+.sent .check-icon::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FCFCFC;
+
+   -webkit-transition: -webkit-transform 0.5s, width 0.5s, top 0.3s;
+  -moz-transition: -moz-transform 0.5s, width 0.5s, top 0.3s;
+  -o-transition: -moz-transform 0.5s, width 0.5s, top 0.3s;
+  transition: transform 0.5s, width 0.5s, top 0.3s;
+}
+
+.sent:hover .check-icon::before,
+.sent:hover .check-icon::after {
+  /*width: 120%;*/
+  /*height: 120%;*/
+  /*-webkit-transition-duration: 0.25s;*/
+}
+
+.sent .check-icon::before {
+
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -ms-transform-origin: top right;
+  -o-transform-origin: top right;
+  transform-origin: top right;
+
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.sent .check-icon::after {
+  -webkit-transform-origin: bottom right;
+  -moz-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  -o-transform-origin: bottom right;
+  transform-origin: bottom right;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  width: 102px;
+}
+
+
+
 
 
 
