@@ -26,6 +26,14 @@
   <link rel="shortcut icon" href="img/happy_fish_logo_black_favicon.ico">
 </head>
 <body>
+	<script>
+	window.addEventListener("touchmove", function(event) {
+  if (!event.target.classList.contains('scrollable')) {
+    // no more scrolling
+    event.preventDefault();
+  }
+}, false);
+	</script>
 
 	<div class="container">
 
@@ -62,7 +70,7 @@
 		</div>
 		<div class="content2">
 			<h2>mobile-friendly</h2>
-			<p>Websites are being viewed more than ever on mobile phones and tablets. All our designs are implemented with this in mind. We make sure that your site not only works great, but looks great on all devices.</p>
+			<p>Websites are being viewed more than ever on mobile phones and tablets. All of our designs are implemented with this in mind. We make sure that your site not only works great, but looks great on all devices.</p>
 		</div>
 		<div class="content3">
 			<h2>need an update?</h2>
@@ -73,7 +81,7 @@
 			<p>Put a face to your brand or company with your website. Integrate your social media through it and get found on search engines. We’ll take care of your brand and help build it online.</p>
 		</div>
 		<div class="content5">
-			<h2>have and idea?</h2>
+			<h2>have an idea?</h2>
 			<p>We’re listening. Whether it’s a simple blog or a vast application, we can bring your idea to life.</p>
 		</div>
 		<div class="main2">
@@ -145,7 +153,9 @@
 					</button>
 				</div>
 				<div class="button-portfolio">
+					<!-- <button id="load" onClick="sendAJAX2()"> -->
 					<a href="portfolio.html"><p>portfolio</p></a>
+					<!-- </button> -->
 				</div>
 				<!-- <h2>who we are</h2>
 				<p>Happy Fish is made up of web designers and developers that can turn your ideas or plans into a unique, mobile-friendly and compatible website.</p> -->
@@ -170,7 +180,7 @@
 
 	<div class="sent">
 	    <div class="check-icon"></div>
-	    <p>sent</p>
+	    <p>Sent</p>
   	</div>
 
 
@@ -191,6 +201,7 @@
 	</script>
 <!-- END PARA -->
 
+<!-- <script src="js/hammer.min.js"></script>  -->
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script> 
 <script src="js/contact.js"></script> 

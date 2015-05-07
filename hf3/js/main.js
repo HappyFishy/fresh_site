@@ -922,7 +922,7 @@ function navigateTo(){
 // })(window,document);
 
 
-$('html').bind('mousewheel wheel DOMMouseScroll MozMousePixelScroll', function (e) {
+$('html').bind('ScrollStart mousewheel wheel DOMMouseScroll MozMousePixelScroll', function (e) {
 	// $('html').on('mousewheel', function (e) {
     // var delta = e.originalEvent.wheelDelta;
     event.preventDefault();
@@ -942,6 +942,44 @@ $('html').bind('mousewheel wheel DOMMouseScroll MozMousePixelScroll', function (
 		goUp();
     }
 });
+
+// $('html').on('ScrollStart', function (e) {
+// 	// $('html').on('mousewheel', function (e) {
+//     // var delta = e.originalEvent.wheelDelta;
+//     event.preventDefault();
+//     console.log(event.deltaY);
+
+
+//     if(isMoving == false && event.deltaY > 0) {
+
+// 	   console.log('scrolled down');
+
+//        goDown();
+
+//     } else if (isMoving == false && event.deltaY < 0) {
+
+//         console.log('scrolled up');
+
+// 		goUp();
+//     }
+// });
+
+
+
+
+
+document.addEventListener("touchmove", ScrollStart, false);
+document.addEventListener("scroll", Scroll, false);
+
+function ScrollStart() {
+    //start of scroll event for iOS
+}
+
+function Scroll() {
+    //end of scroll event for iOS
+    //and
+    //start/end of scroll event for other browsers
+}
 
 // $('html').on('wheel', function (e) {
 //     // var delta = e.originalEvent.wheelDelta;
