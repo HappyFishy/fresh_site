@@ -1127,11 +1127,20 @@ p {
   padding: 10px;
 }
 
+.fixed .button-contact p {
+  padding: 8px 10px 12px;
+  max-height: 25px;
+}
+
 .fixed .button-portfolio {
   max-width: 130px;
   background-color: #AF4335;
   margin-left: 15px;
   margin-top: 10px;
+}
+
+button {
+  border: none;
 }
 
 h2 {
@@ -1913,6 +1922,11 @@ ME-D-UH QUERIES
   .fixed .button-contact {
     max-width: 100px;
   }
+
+  .fixed .button-contact p {
+    padding: 7px 10px 8px;
+    max-height: 25px;
+  }
   .fixed .button-portfolio {
     max-width: 110px;
   }
@@ -1957,6 +1971,12 @@ ME-D-UH QUERIES
   .fixed .button-contact {
     max-width: 100px;
   }
+
+  .fixed .button-contact p {
+    padding: 7px 10px 8px;
+    max-height: 25px;
+  }
+
   .fixed .button-portfolio {
     max-width: 110px;
   }
@@ -2011,6 +2031,11 @@ ME-D-UH QUERIES
   .fixed .button-contact p,
   .fixed .button-portfolio p {
     padding: 10px;
+  }
+
+  .fixed .button-contact p {
+    padding: 7px 10px 8px;
+    max-height: 25px;
   }
   .fixed .button-portfolio {
     max-width: 110px;
@@ -2233,6 +2258,11 @@ ME-D-UH QUERIES
     margin-left: 5px;
   }
 
+  .fixed .button-contact p {
+    padding: 7px 10px 8px;
+    max-height: 25px;
+  }
+
   .content, .content2, .content3, .content4, .content5 {
     bottom: 25px;
     left: 20px;
@@ -2334,6 +2364,11 @@ ME-D-UH QUERIES
   .fixed .button-contact p,
   .fixed .button-portfolio p {
     padding: 15px;
+  }
+
+  .fixed .button-contact p {
+    padding: 10px 15px 40px;
+    max-height: 25px;
   }
 
   .down-arrow {
