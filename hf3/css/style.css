@@ -2667,14 +2667,15 @@ contact sent
 
 .sent {
   z-index: 150;
-  background-color: rgba(50,50,50,.5);
+  background-color: rgba(13,8,9,.5);
   position: absolute;
   width: 135px;
   height: 110px;
-  top: 35%;
-  left: 42%;
-  color: black;
-  border-radius: 5%;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -87.5px;
+  color: #0D0809;
   padding-top: 90px;
   padding-left: 65px;
   visibility: hidden;
@@ -2682,8 +2683,8 @@ contact sent
 
 .sent p {
   padding-top: 50px;
-  font-size: 20pt;
-  color: white;
+  font-size: 30px;
+  color: #fcfcfc;
   text-align: left;
   margin-right: 40px;
 }

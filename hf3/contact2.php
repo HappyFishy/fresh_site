@@ -111,10 +111,8 @@ $section = "contact";
         </div>
 
         <div class="field4">
-            <button type="submit">Send</button>
-            <p>connect@happyfishllc.com</p>
+            <button type="submit">send</button>
         </div>
-
         <div class="fieldfake" style="visibility:hidden">
             <label for="messageaddress">Address:</label>
             <textarea id="address" name="address"></textarea>
