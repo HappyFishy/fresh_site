@@ -1,5 +1,82 @@
 jQuery(document).ready(function($){
 
+(function() {
+// initializes touch and scroll events
+        var supportTouch = $.support.touch,
+                scrollEvent = "touchmove scroll",
+                touchStartEvent = supportTouch ? "touchstart" : "mousedown",
+                touchStopEvent = supportTouch ? "touchend" : "mouseup",
+                touchMoveEvent = supportTouch ? "touchmove" : "mousemove";
+
+ // handles swipeup and swipedown
+        $.event.special.swipeupdown = {
+            setup: function() {
+                var thisObject = this;
+                var $this = $(thisObject);
+
+                $this.bind(touchStartEvent, function(event) {
+                    var data = event.originalEvent.touches ?
+                            event.originalEvent.touches[ 0 ] :
+                            event,
+                            start = {
+                                time: (new Date).getTime(),
+                                coords: [ data.pageX, data.pageY ],
+                                origin: $(event.target)
+                            },
+                            stop;
+
+                    function moveHandler(event) {
+                        if (!start) {
+                            return;
+                        }
+
+                        var data = event.originalEvent.touches ?
+                                event.originalEvent.touches[ 0 ] :
+                                event;
+                        stop = {
+                            time: (new Date).getTime(),
+                            coords: [ data.pageX, data.pageY ]
+                        };
+
+                        // prevent scrolling
+                        if (Math.abs(start.coords[1] - stop.coords[1]) > 10) {
+                            event.preventDefault();
+                        }
+                    }
+
+                    $this
+                            .bind(touchMoveEvent, moveHandler)
+                            .one(touchStopEvent, function(event) {
+                        $this.unbind(touchMoveEvent, moveHandler);
+                        if (start && stop) {
+                            if (stop.time - start.time < 1000 &&
+                                    Math.abs(start.coords[1] - stop.coords[1]) > 30 &&
+                                    Math.abs(start.coords[0] - stop.coords[0]) < 75) {
+                                start.origin
+                                        .trigger("swipeupdown")
+                                        .trigger(start.coords[1] > stop.coords[1] ? "swipeup" : "swipedown");
+                            }
+                        }
+                        start = stop = undefined;
+                    });
+                });
+            }
+        };
+
+//Adds the events to the jQuery events special collection
+        $.each({
+            swipedown: "swipeupdown",
+            swipeup: "swipeupdown"
+        }, function(event, sourceEvent){
+            $.event.special[event] = {
+                setup: function(){
+                    $(this).bind(sourceEvent, $.noop);
+                }
+            };
+        });
+
+    })();
+
 	function goDown() {
 
 /////////////////////////////////////////////////////////////////
@@ -816,6 +893,16 @@ $('.up-arrow').on('click', function(event){
 	goUp();
 });
 
+$('html').on('swipedown', function(event){
+	goUp();
+	console.log('swipe!');
+});
+
+$('html').on('swipeup', function(event){
+	goDown();
+	console.log('swipe!');
+});
+
 
 ////// chrome, opera, i.e. ////// works on safari also
 
@@ -921,8 +1008,37 @@ function navigateTo(){
 
 // })(window,document);
 
+$(document).on("scrollstart",function(){
+  alert("Started scrolling!");
+});
+
+$("html").on("swipeup",function(){
+  alert("Started scrolling!");
+});
+
 
 $('html').bind('ScrollStart mousewheel wheel DOMMouseScroll MozMousePixelScroll', function (e) {
+	// $('html').on('mousewheel', function (e) {
+    // var delta = e.originalEvent.wheelDelta;
+    // event.preventDefault();
+    console.log(event.deltaY);
+
+
+    if(isMoving == false && event.deltaY > 0) {
+
+	   console.log('scrolled down');
+
+       goDown();
+
+    } else if (isMoving == false && event.deltaY < 0) {
+
+        console.log('scrolled up');
+
+		goUp();
+    }
+});
+
+$('html').on('scroll', function (e) {
 	// $('html').on('mousewheel', function (e) {
     // var delta = e.originalEvent.wheelDelta;
     event.preventDefault();
@@ -968,18 +1084,18 @@ $('html').bind('ScrollStart mousewheel wheel DOMMouseScroll MozMousePixelScroll'
 
 
 
-document.addEventListener("touchmove", ScrollStart, false);
-document.addEventListener("scroll", Scroll, false);
+// document.addEventListener("touchmove", ScrollStart, false);
+// document.addEventListener("scroll", Scroll, false);
 
-function ScrollStart() {
+// function ScrollStart() {
     //start of scroll event for iOS
-}
+// }
 
-function Scroll() {
+// function Scroll() {
     //end of scroll event for iOS
     //and
     //start/end of scroll event for other browsers
-}
+// }
 
 // $('html').on('wheel', function (e) {
 //     // var delta = e.originalEvent.wheelDelta;

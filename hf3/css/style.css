@@ -81,6 +81,8 @@ h1 {
       -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
       transform: translateY(-100%);
+      display: none;
+      visibility: hidden;
   }
   100% {
       -webkit-transform: translateY(0%);
@@ -99,6 +101,8 @@ h1 {
       -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
       transform: translateY(100%);
+      display: none;
+      visibility: hidden;
   }
   100% {
       -webkit-transform: translateY(0%);
@@ -1389,6 +1393,7 @@ portfolio
 
   position: absolute;
 
+  overflow: hidden;
   color: #fcfcfc;
   bottom: 50px;
   left: 45px;
@@ -1428,12 +1433,12 @@ a:hover {
       /*line-height: 20px;*/
   }
   100% {
-      -webkit-transform: translateY(-2500%);
-      -moz-transform: translateY(-2500%);
-      -ms-transform: translateY(-2500%);
-      -o-transform: translateY(-2500%);
-      transform: translateY(-2500%);
-      /*z-index: -100;*/
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      z-index: -100;
   }
 }
 
@@ -1472,12 +1477,12 @@ a:hover {
       transform: translateY(2500%);
   }
   100% {
-      -webkit-transform: translateY(2500%);
-      -webmozansform: translateY(2500%);
-      -ms-transform: translateY(2500%);
-      -o-transform: translateY(2500%);
-      transform: translateY(2500%);
-      /*z-index: -100;*/
+      -webkit-transform: translateY(0%);
+      -moz-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+      -o-transform: translateY(0%);
+      transform: translateY(0%);
+      z-index: -100;
   }
 }
 

@@ -47,6 +47,10 @@ jQuery(document).ready(function($){
 		.fail(function(data) {
 		    
 		    $('.form-messages').addClass('error');
+		    
+		    setTimeout(function(){
+				$('.form-messages').hide('slow');
+			}, 2500);
 
 		    if (data.responseText !== '') {
 		        $(formMessages).text(data.responseText);
