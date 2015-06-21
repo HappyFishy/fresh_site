@@ -579,6 +579,9 @@ hover?
 }
 
 @-webkit-keyframes colorMain {
+/*  0% {
+    background-color: rgba(198,73,64,.7);
+  }*/
   100% {
     background-color: rgba(89,91,107, .7);
   }
